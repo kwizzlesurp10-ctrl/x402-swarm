@@ -113,6 +113,8 @@ function createMockMcpAndPaidHandler(options: {
   mcpGetMode?: "ok" | "redirect307_to_404" | "not_found";
   includeWellKnown?: boolean;
   paidPath?: string;
+  wellKnownItemsFormat?: boolean;
+  paidMethodOnlyPost?: boolean;
 }): http.RequestListener {
   const paidPath = options.paidPath ?? "/api/v1/oracle";
   const priceMicroUsd = options.priceMicroUsd ?? "1000";
@@ -126,6 +128,20 @@ function createMockMcpAndPaidHandler(options: {
     if (method === "GET" && url.pathname === "/.well-known/x402") {
       if (options.includeWellKnown === false) {
         writeJson(res, 404, { error: "Not found" });
+        return;
+      }
+      if (options.wellKnownItemsFormat) {
+        writeJson(res, 200, {
+          x402Version: 2,
+          items: [
+            {
+              resource: `http://${req.headers.host ?? "127.0.0.1"}${paidPath}`,
+              scheme: "exact",
+              network,
+              payTo: options.payTo,
+            },
+          ],
+        });
         return;
       }
       writeJson(res, 200, {
@@ -202,6 +218,13 @@ function createMockMcpAndPaidHandler(options: {
     }
 
     if (url.pathname === paidPath) {
+      if (options.paidMethodOnlyPost && method === "GET") {
+        writeJson(res, 200, {
+          method: "POST",
+          info: "Send POST to pay",
+        });
+        return;
+      }
       const accepts: X402PaymentRequiredEnvelope["accepts"] = [
         {
           scheme: "exact",
@@ -693,19 +716,49 @@ async function runTests(): Promise<void> {
     assert.equal(listCat.byStatus.unverified, 1);
 
     // 9. Verify real repo registry/catalog.json, registry/manifests/, and server.json compliance.
+    const itemsResourceServer = await startMockHttpServer(
+      createMockMcpAndPaidHandler({
+        payTo: DEFAULT_X402_PAY_TO,
+        paidPath: "/api/swarm",
+        wellKnownItemsFormat: true,
+        paidMethodOnlyPost: true,
+      })
+    );
+    try {
+      const itemsRes = await validateEndpoint(itemsResourceServer.baseUrl);
+      assert.equal(itemsRes.valid, true, "items[].resource paid target must validate cleanly");
+      assert.equal(itemsRes.score, 100);
+    } finally {
+      await itemsResourceServer.close();
+    }
+
     const repoIndexer = new CatalogIndexer();
-    const repoCatalog = repoIndexer.loadCatalog();
-    assert.equal(repoCatalog.length, 8, "Expected 8 seeded entries in registry/catalog.json");
-    for (const entry of repoCatalog) {
+    const repoManifests = repoIndexer.loadManifests();
+    assert.ok(repoManifests.length >= 10, "Expected at least 10 manifests in registry/manifests/");
+    for (const manifest of repoManifests) {
       assert.equal(
-        entry.status,
+        manifest.status,
         "seeded_pending_live_probe",
-        `Seeded catalog entry ${entry.id} must have status seeded_pending_live_probe`
+        `Seeded manifest ${manifest.id} must have status seeded_pending_live_probe`
       );
+      assert.notEqual(
+        manifest.payTo.toLowerCase(),
+        RETIRED_X402_PAY_TO.toLowerCase(),
+        `Seeded manifest ${manifest.id} must never use retired payee`
+      );
+    }
+
+    const repoCatalog = repoIndexer.loadCatalog();
+    assert.equal(
+      repoCatalog.length,
+      repoManifests.length,
+      "Expected registry/catalog.json entry count to match registry/manifests/"
+    );
+    for (const entry of repoCatalog) {
       assert.notEqual(
         entry.payTo.toLowerCase(),
         RETIRED_X402_PAY_TO.toLowerCase(),
-        `Seeded entry ${entry.id} must never use retired payee`
+        `Catalog entry ${entry.id} must never use retired payee`
       );
     }
 

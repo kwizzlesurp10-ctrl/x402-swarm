@@ -157,6 +157,7 @@ function extractDiscoveredPaidTarget(
     "routes",
     "paidRoutes",
     "resources",
+    "items",
   ]) {
     const list = doc[listKey];
     if (Array.isArray(list) && list.length > 0) {
@@ -176,7 +177,7 @@ function extractDiscoveredPaidTarget(
         // Ignore invalid URL candidate
       }
     } else if (isPlainObject(candidate)) {
-      const rawPath = candidate.url ?? candidate.path ?? candidate.endpoint;
+      const rawPath = candidate.resource ?? candidate.url ?? candidate.path ?? candidate.endpoint;
       if (typeof rawPath === "string" && rawPath.trim()) {
         try {
           return { paidUrl: new URL(rawPath.trim(), origin).toString() };
@@ -693,8 +694,8 @@ export async function validateEndpoint(
       timeoutMs
     );
 
-    if (!options.paidMethod && paidRes.status === 405) {
-      paidRes = await fetchManual(
+    if (!options.paidMethod && initialMethod === "GET" && (paidRes.status === 405 || paidRes.status === 200)) {
+      const postRes = await fetchManual(
         fetchImpl,
         paidTargetUrl,
         {
@@ -707,6 +708,9 @@ export async function validateEndpoint(
         },
         timeoutMs
       );
+      if (paidRes.status === 405 || postRes.status === 402) {
+        paidRes = postRes;
+      }
     }
 
     paidCheckStatus = paidRes.status || undefined;

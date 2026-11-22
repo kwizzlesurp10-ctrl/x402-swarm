@@ -1,0 +1,20 @@
+{
+  "id": "alpha-sentinel-mcp",
+  "name": "alpha-sentinel-mcp.vercel.app",
+  "title": "Alpha Sentinel MCP",
+  "description": "Kwizzlesurp.com Alpha Sentinel x402 paid MCP server on Base.",
+  "url": "https://alpha-sentinel-mcp.vercel.app",
+  "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+  "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:8453"
+  ],
+  "schemes": [
+    "exact"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "5000",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-22T07:15:00.000Z"
+}
