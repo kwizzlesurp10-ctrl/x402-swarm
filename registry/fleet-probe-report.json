@@ -1,0 +1,205 @@
+{
+  "probedAt": "2026-11-22T06:56:08.891Z",
+  "catalogCount": 10,
+  "fleetHostsProbed": 4,
+  "verifiedCount": 1,
+  "failedCount": 3,
+  "fleet": [
+    {
+      "id": "alpha-witness-mcp",
+      "url": "https://alpha-witness-mcp.vercel.app",
+      "status": "failed",
+      "score": 20,
+      "latencyMs": 413,
+      "wellKnownTrustTxtStatus": 404,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": false,
+          "status": 404,
+          "detail": "GET /.well-known/x402 returned HTTP 404 (optional)"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": false,
+          "status": 404,
+          "detail": "GET /mcp returned HTTP 404 (expected 200 OK JSON)"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": false,
+          "status": 404,
+          "detail": "MCP initialize returned invalid JSON-RPC response (HTTP 404)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": false,
+          "status": 404,
+          "detail": "Expected HTTP 402 challenge from /, got HTTP 404"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "No retired payee detected (0xAB745e5F576667037696e78ba7dA28E193E4423D blocked)"
+        }
+      ],
+      "networks": [
+        "eip155:84532",
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": [],
+      "priceMicroUsd": null
+    },
+    {
+      "id": "x402-crediting-swarm",
+      "url": "https://x402-crediting-swarm.vercel.app",
+      "status": "failed",
+      "score": 40,
+      "latencyMs": 511,
+      "wellKnownTrustTxtStatus": 200,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /.well-known/x402 returned 200 OK JSON metadata"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": false,
+          "status": 404,
+          "detail": "GET /mcp returned HTTP 404 (expected 200 OK JSON)"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": false,
+          "status": 404,
+          "detail": "MCP initialize returned invalid JSON-RPC response (HTTP 404)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": false,
+          "status": 200,
+          "detail": "Expected HTTP 402 challenge from /, got HTTP 200"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+        }
+      ],
+      "networks": [
+        "eip155:84532",
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": [
+        "0x0d25a44f74868ece53b305c97139cf4b62963410"
+      ],
+      "priceMicroUsd": null
+    },
+    {
+      "id": "x402-mcp-onrender",
+      "url": "https://x402-mcp.onrender.com",
+      "status": "verified",
+      "score": 100,
+      "latencyMs": 847,
+      "wellKnownTrustTxtStatus": 200,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /.well-known/x402 returned 200 OK JSON metadata"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /mcp and GET /mcp/ both returned 200 OK JSON server cards"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": true,
+          "status": 200,
+          "detail": "MCP initialize + tools/list succeeded for x402-micropayments (21 tools)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": true,
+          "status": 402,
+          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+        }
+      ],
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": [
+        "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+      ],
+      "priceMicroUsd": "10000"
+    },
+    {
+      "id": "x402orcle",
+      "url": "https://x402orcle.vercel.app",
+      "status": "failed",
+      "score": 80,
+      "latencyMs": 876,
+      "wellKnownTrustTxtStatus": 200,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /.well-known/x402 returned 200 OK JSON metadata"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": false,
+          "status": 402,
+          "detail": "GET /mcp returned HTTP 402 (expected 200 OK JSON)"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": true,
+          "status": 200,
+          "detail": "MCP initialize + tools/list succeeded for x402orcle (7 tools)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": true,
+          "status": 402,
+          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+        }
+      ],
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": [
+        "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+      ],
+      "priceMicroUsd": "100000"
+    }
+  ]
+}

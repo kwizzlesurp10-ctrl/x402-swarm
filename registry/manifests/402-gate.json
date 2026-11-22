@@ -1,0 +1,21 @@
+{
+  "id": "402-gate",
+  "name": "402-gate",
+  "title": "402-Gate Universal x402 Paid MCP Server",
+  "description": "Universal paidTool MCP adapter and HTTP 402 REST gateway for Base Sepolia USDC payments.",
+  "url": "http://127.0.0.1:4020",
+  "mcpEndpoint": "http://127.0.0.1:4020/mcp",
+  "wellKnownUrl": "http://127.0.0.1:4020/.well-known/x402",
+  "paidEndpoint": "http://127.0.0.1:4020/api/tools/paid_json_transform",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:84532"
+  ],
+  "schemes": [
+    "exact"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "1000",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-22T06:50:00.000Z"
+}

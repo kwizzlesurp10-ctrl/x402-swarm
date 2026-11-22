@@ -1,0 +1,21 @@
+{
+  "id": "x402-crediting-swarm",
+  "name": "x402-crediting-swarm.vercel.app",
+  "title": "x402 Crediting Swarm MCP",
+  "description": "Seeded kwizzlesurp.com fleet manifest for x402-crediting-swarm.vercel.app pending live endpoint probe.",
+  "url": "https://x402-crediting-swarm.vercel.app",
+  "mcpEndpoint": "https://x402-crediting-swarm.vercel.app/mcp",
+  "wellKnownUrl": "https://x402-crediting-swarm.vercel.app/.well-known/x402",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:84532",
+    "eip155:8453"
+  ],
+  "schemes": [
+    "exact"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "1000",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-22T06:05:00.000Z"
+}

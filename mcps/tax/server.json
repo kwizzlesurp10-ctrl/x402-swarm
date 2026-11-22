@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.kwizzlesurp10-ctrl/x402-tax-ledger",
+  "title": "x402 Tax-Ledger MCP",
+  "description": "Micropayment Form 8949 tax export, CSV ledger, and DSSE-signed audit bundles.",
+  "version": "0.1.0",
+  "websiteUrl": "https://kwizzlesurp.com",
+  "repository": {
+    "url": "https://github.com/kwizzlesurp10-ctrl/x402-swarm",
+    "source": "github",
+    "subfolder": "mcps/tax"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:4024/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "author": "Keith S.",
+      "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+      "website": "https://kwizzlesurp.com",
+      "contact": "kwizzlesurp10@gmail.com",
+      "location": "Minneapolis, MN, USA",
+      "tools": [
+        "export_tax_ledger",
+        "generate_audit_bundle",
+        "verify_audit_bundle"
+      ]
+    }
+  }
+}

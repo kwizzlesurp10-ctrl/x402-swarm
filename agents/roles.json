@@ -1,0 +1,49 @@
+{
+  "swarm": "x402-swarm",
+  "owner": "Keith S. <kwizzlesurp10@gmail.com>",
+  "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "roles": [
+    {
+      "id": "scout",
+      "title": "Scout",
+      "focus": "X + x402 Foundation lane intel",
+      "artifacts": ["x402-swarm-deck.html"]
+    },
+    {
+      "id": "architect",
+      "title": "Architect",
+      "focus": "MCP v2 contracts, schemas, integer pricing",
+      "artifacts": ["shared/types.ts", "shared/constants.ts", "mcps/*/server.json"]
+    },
+    {
+      "id": "builder",
+      "title": "Builder",
+      "focus": "Lightning-402, Discovery, Settlement, Tax MCP servers",
+      "artifacts": ["mcps/lightning/server.ts", "mcps/discovery/server.ts", "mcps/settlement/server.ts", "mcps/tax/server.ts"]
+    },
+    {
+      "id": "paymaster",
+      "title": "Paymaster",
+      "focus": "@x402/fetch + @x402/evm + Lightning handshakes",
+      "artifacts": ["shared/x402-adapter.ts", "harness/local-facilitator.ts"]
+    },
+    {
+      "id": "hardener",
+      "title": "Hardener",
+      "focus": "Spend caps, retired-payee block, replay guards, 0600 Ed25519 DSSE",
+      "artifacts": ["shared/policy.ts", "shared/keystore.ts"]
+    },
+    {
+      "id": "registrar",
+      "title": "Registrar",
+      "focus": "validate_endpoint diagnostics and cross-vendor catalog",
+      "artifacts": ["mcps/discovery/validator.ts", "mcps/discovery/indexer.ts", "registry/catalog.json"]
+    },
+    {
+      "id": "ledger",
+      "title": "Ledger",
+      "focus": "Integer micro-USD reconciliation and Form 8949 tax export",
+      "artifacts": ["mcps/settlement/ledger.ts", "mcps/tax/exporter.ts", "registry/testnet-ledger.jsonl"]
+    }
+  ]
+}

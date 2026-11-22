@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.kwizzlesurp10-ctrl/x402-discovery-registrar",
+  "title": "x402 Swarm Discovery Registrar",
+  "description": "Validates x402 v2 paid MCP endpoints, blocks retired payees, and indexes service catalogs.",
+  "websiteUrl": "https://kwizzlesurp.com",
+  "repository": {
+    "url": "https://github.com/kwizzlesurp10-ctrl/x402-swarm",
+    "source": "github",
+    "subfolder": "mcps/discovery"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:4022/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "author": "Keith S.",
+      "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+      "website": "https://kwizzlesurp.com",
+      "contact": "kwizzlesurp10@gmail.com",
+      "location": "Minneapolis, MN, USA"
+    }
+  }
+}

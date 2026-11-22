@@ -1,0 +1,22 @@
+{
+  "id": "tax-ledger",
+  "name": "tax-ledger",
+  "title": "x402 Tax Ledger & Form 8949 Export MCP",
+  "description": "RFC 4180 CSV, JSONL, and DSSE-signed Form 8949 audit bundle exporter using strict bigint math.",
+  "url": "http://127.0.0.1:4024",
+  "mcpEndpoint": "http://127.0.0.1:4024/mcp",
+  "wellKnownUrl": "http://127.0.0.1:4024/.well-known/x402",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:84532",
+    "lightning:testnet"
+  ],
+  "schemes": [
+    "exact",
+    "lightning"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "0",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-22T06:05:00.000Z"
+}

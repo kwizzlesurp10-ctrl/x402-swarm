@@ -1,0 +1,33 @@
+{
+  "name": "x402-swarm",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "author": "Keith S. <kwizzlesurp10@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:gate": "npx tsx mcps/gate/test.ts",
+    "test:lightning": "npx tsx mcps/lightning/test.ts",
+    "test:discovery": "npx tsx mcps/discovery/test.ts",
+    "test:policy": "npx tsx mcps/policy/test.ts",
+    "test:settlement": "npx tsx mcps/settlement/test.ts",
+    "test:tax": "npx tsx mcps/tax/test.ts",
+    "test:all": "npm run typecheck && npm run test:gate && npm run test:lightning && npm run test:discovery && npm run test:policy && npm run test:settlement && npm run test:tax",
+    "verify:swarm": "npx tsx harness/verify-swarm.ts",
+    "probe:fleet": "npx tsx harness/probe-fleet.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "@x402/core": "latest",
+    "@x402/evm": "latest",
+    "@x402/fetch": "latest",
+    "viem": "^2.21.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

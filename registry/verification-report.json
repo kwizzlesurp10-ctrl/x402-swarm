@@ -1,0 +1,207 @@
+{
+  "verifiedAt": "2026-11-22T06:55:08.773Z",
+  "keystore": {
+    "path": "/home/keef/x402-swarm/.keystore/ed25519.pem",
+    "keyid": "ed25519:76921d7540c827b1",
+    "modeOctal": "0600"
+  },
+  "gateA_registryAndBrowserGet": {
+    "serverJsonChecks": [
+      {
+        "path": "mcps/gate/server.json",
+        "name": "io.github.kwizzlesurp10-ctrl/x402-gate",
+        "descriptionLen": 96
+      },
+      {
+        "path": "mcps/lightning/server.json",
+        "name": "com.kwizzlesurp/lightning-402",
+        "descriptionLen": 97
+      },
+      {
+        "path": "mcps/discovery/server.json",
+        "name": "io.github.kwizzlesurp10-ctrl/x402-discovery-registrar",
+        "descriptionLen": 90
+      },
+      {
+        "path": "mcps/policy/server.json",
+        "name": "io.github.kwizzlesurp10-ctrl/x402-policy-identity",
+        "descriptionLen": 97
+      },
+      {
+        "path": "mcps/settlement/server.json",
+        "name": "io.github.kwizzlesurp10-ctrl/x402-settlement-ops",
+        "descriptionLen": 81
+      },
+      {
+        "path": "mcps/tax/server.json",
+        "name": "io.github.kwizzlesurp10-ctrl/x402-tax-ledger",
+        "descriptionLen": 77
+      }
+    ],
+    "mcpCardChecks": [
+      {
+        "name": "gate",
+        "statusGet": 200,
+        "statusSlash": 200,
+        "tools": 3
+      },
+      {
+        "name": "lightning",
+        "statusGet": 200,
+        "statusSlash": 200,
+        "tools": 3
+      },
+      {
+        "name": "discovery",
+        "statusGet": 200,
+        "statusSlash": 200,
+        "tools": 4
+      },
+      {
+        "name": "policy",
+        "statusGet": 200,
+        "statusSlash": 200,
+        "tools": 5
+      },
+      {
+        "name": "settlement",
+        "statusGet": 200,
+        "statusSlash": 200,
+        "tools": 4
+      },
+      {
+        "name": "tax",
+        "statusGet": 200,
+        "statusSlash": 200,
+        "tools": 3
+      }
+    ]
+  },
+  "gateB_policyAndIdentity": {
+    "cap_enforced": true,
+    "evmCapBlockReason": "Failed to create payment payload: Payment creation aborted: Requested 1000 micro-USD exceeds maxPerCallMicroUsd 500",
+    "policyMcpToolsVerified": true,
+    "policyRevocationBlocked": true,
+    "retiredPayeeRejectedInPolicy": true
+  },
+  "gateC_paidGateAndDualRail": {
+    "gate402_tx": "local-eip3009-8c5f1682cd0f34c2f01748632fccb6754c0f84023f3159e53aa94442e170da2e",
+    "gate402_replay_rejected_status": 409,
+    "lightning_tx": "ln:ed7b4423dfc3acf41c22a5442a4ac4d63c862d4d2f68ee4a0514c4448bfdf7ec",
+    "lightning_mcp_tx": "ln:5c856250e265028cd99b33141715986a82d6ca45427962d6c66866a892241755",
+    "lightning_replay_rejected_status": 409,
+    "local_eip3009_tx": "local-eip3009-f75314cdad3a292ce8328ca850329d424a89ee89e92fd3c78af65efe271176e8",
+    "local_eip3009_replay_rejected_status": 409
+  },
+  "gateD_discovery": {
+    "gate402Validated": true,
+    "gate402Score": 100,
+    "lightning402Validated": true,
+    "lightning402Score": 100
+  },
+  "gateE_settlementAndTax": {
+    "ledgerPath": "registry/testnet-ledger.jsonl",
+    "ingestedCount": 5,
+    "expectedGrossMicroUsd": "2163000",
+    "expectedGrossUsd": "2.163000",
+    "reconciledGrossMicroUsd": "2163000",
+    "batchSignedAndVerified": true,
+    "taxAuditBundleVerified": true,
+    "exports": [
+      "registry/exports/tax-ledger-2026.csv",
+      "registry/exports/tax-ledger-2026.jsonl",
+      "registry/exports/tax-audit-bundle-2026.json"
+    ]
+  },
+  "task1": {
+    "server_path": "mcps/lightning/server.ts",
+    "handshake_tx": "0x4d4f49caf594e8264b63d5f2da5d44c0477da26c53beeb173673c4d4e2cd6340",
+    "local_eip3009_tx": "local-eip3009-f75314cdad3a292ce8328ca850329d424a89ee89e92fd3c78af65efe271176e8",
+    "lightning_tx": "ln:ed7b4423dfc3acf41c22a5442a4ac4d63c862d4d2f68ee4a0514c4448bfdf7ec",
+    "cap_enforced": true
+  },
+  "task2": {
+    "server_path": "mcps/discovery/server.ts",
+    "registry_path": "registry/catalog.json",
+    "validated_endpoints": 2
+  },
+  "task3": {
+    "settlement_server_path": "mcps/settlement/server.ts",
+    "tax_server_path": "mcps/tax/server.ts",
+    "dsse_verified": true,
+    "gross_micro_usd": "2163000"
+  },
+  "liveFacilitatorProbe": {
+    "reachable": true,
+    "facilitatorUrl": "https://x402.org/facilitator",
+    "supportsBaseSepolia": true,
+    "supportedKindsCount": 11,
+    "hasFundedTestnetKey": true,
+    "payerAddress": "0x41f4FFD63269FFeA16ceE2B90f1a015afA0Fb955",
+    "liveVerifyChecked": true,
+    "liveOnchainSettled": true,
+    "handshake_tx": "0x4d4f49caf594e8264b63d5f2da5d44c0477da26c53beeb173673c4d4e2cd6340",
+    "responseStatus": 200,
+    "body": {
+      "ok": true,
+      "endpoint": "/api/v1/oracle",
+      "quote": {
+        "pair": "BTC/USD",
+        "btcMicroUsdPerSat": "90000",
+        "btcMicroUsd": "9000000000000",
+        "btcUsdFormatted": "9000000.000000",
+        "satsPerUsd": "11",
+        "msatPerUsd": "11111",
+        "msatNumeratorPerMicroUsd": "1000",
+        "precision": "integer_micro_usd",
+        "observedAt": "2026-11-22T06:42:02.670Z"
+      },
+      "witness": {
+        "payloadType": "application/vnd.x402.satoshi-oracle+json",
+        "payload": "eyJwYWlyIjoiQlRDL1VTRCIsImJ0Y01pY3JvVXNkUGVyU2F0IjoiOTAwMDAiLCJidGNNaWNyb1VzZCI6IjkwMDAwMDAwMDAwMDAiLCJidGNVc2RGb3JtYXR0ZWQiOiI5MDAwMDAwLjAwMDAwMCIsInNhdHNQZXJVc2QiOiIxMSIsIm1zYXRQZXJVc2QiOiIxMTExMSIsIm1zYXROdW1lcmF0b3JQZXJNaWNyb1VzZCI6IjEwMDAiLCJwcmVjaXNpb24iOiJpbnRlZ2VyX21pY3JvX3VzZCIsIm9ic2VydmVkQXQiOiIyMDI2LTExLTIyVDA2OjQyOjAyLjY3MFoifQ==",
+        "signatures": [
+          {
+            "keyid": "ed25519:76921d7540c827b1",
+            "sig": "KLg1tpiS4CEN2yuxZ5LcnR5CmTY6fMoB5UDLgShWfrMjB5WDZ39AbWBHDSWun5rDz6F/2UJ2O1ZUpYOUHL7qBw=="
+          }
+        ]
+      },
+      "settlement": {
+        "id": "intent_019e5562-64b1-46d9-b301-b763ad7ab75c",
+        "amountMicroUsd": "1000",
+        "network": "eip155:84532",
+        "scheme": "exact",
+        "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+        "txHash": "0x4d4f49caf594e8264b63d5f2da5d44c0477da26c53beeb173673c4d4e2cd6340",
+        "payer": "0x41f4FFD63269FFeA16ceE2B90f1a015afA0Fb955",
+        "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+        "resource": "http://127.0.0.1:36717/api/v1/oracle",
+        "toolName": "http:GET:/api/v1/oracle",
+        "settledAt": "2026-11-22T06:42:02.669Z",
+        "facilitator": "https://x402.org/facilitator",
+        "mode": "live_testnet",
+        "nonce": "0xc5c057c50c5e6814bae0e5dea52e22c15bdc547dbf73fcd4fff105e7f6c8d394",
+        "dsse": {
+          "payloadType": "application/vnd.x402.settlement+json",
+          "payload": "eyJpZCI6ImludGVudF8wMTllNTU2Mi02NGIxLTQ2ZDktYjMwMS1iNzYzYWQ3YWI3NWMiLCJhbW91bnRNaWNyb1VzZCI6IjEwMDAiLCJuZXR3b3JrIjoiZWlwMTU1Ojg0NTMyIiwic2NoZW1lIjoiZXhhY3QiLCJhc3NldCI6IjB4MDM2Q2JENTM4NDJjNTQyNjYzNGU3OTI5NTQxZUMyMzE4ZjNkQ0Y3ZSIsInR4SGFzaCI6IjB4NGQ0ZjQ5Y2FmNTk0ZTgyNjRiNjNkNWYyZGE1ZDQ0YzA0NzdkYTI2YzUzYmVlYjE3MzY3M2M0ZDRlMmNkNjM0MCIsInBheWVyIjoiMHg0MWY0RkZENjMyNjlGRmVBMTZjZUUyQjkwZjFhMDE1YWZBMEZiOTU1IiwicGF5VG8iOiIweDBkMjVBNDRmNzQ4NjhlQ0U1M0IzMDVDOTcxMzlDRjRCNjI5NjM0MTAiLCJyZXNvdXJjZSI6Imh0dHA6Ly8xMjcuMC4wLjE6MzY3MTcvYXBpL3YxL29yYWNsZSIsInRvb2xOYW1lIjoiaHR0cDpHRVQ6L2FwaS92MS9vcmFjbGUiLCJzZXR0bGVkQXQiOiIyMDI2LTExLTIyVDA2OjQyOjAyLjY2OVoiLCJmYWNpbGl0YXRvciI6Imh0dHBzOi8veDQwMi5vcmcvZmFjaWxpdGF0b3IiLCJtb2RlIjoibGl2ZV90ZXN0bmV0Iiwibm9uY2UiOiIweGM1YzA1N2M1MGM1ZTY4MTRiYWUwZTVkZWE1MmUyMmMxNWJkYzU0N2RiZjczZmNkNGZmZjEwNWU3ZjZjOGQzOTQifQ==",
+          "signatures": [
+            {
+              "keyid": "ed25519:76921d7540c827b1",
+              "sig": "uxx9KwfUIo0BHvlR05/4LuqK370+7B2KGTCZ4s0DkiKeeqM/vk+MbBsvESerDeHghUXnbQHl8r5DTUFghCT6DA=="
+            }
+          ]
+        }
+      },
+      "dsse": {
+        "payloadType": "application/vnd.x402.settlement+json",
+        "payload": "eyJpZCI6ImludGVudF8wMTllNTU2Mi02NGIxLTQ2ZDktYjMwMS1iNzYzYWQ3YWI3NWMiLCJhbW91bnRNaWNyb1VzZCI6IjEwMDAiLCJuZXR3b3JrIjoiZWlwMTU1Ojg0NTMyIiwic2NoZW1lIjoiZXhhY3QiLCJhc3NldCI6IjB4MDM2Q2JENTM4NDJjNTQyNjYzNGU3OTI5NTQxZUMyMzE4ZjNkQ0Y3ZSIsInR4SGFzaCI6IjB4NGQ0ZjQ5Y2FmNTk0ZTgyNjRiNjNkNWYyZGE1ZDQ0YzA0NzdkYTI2YzUzYmVlYjE3MzY3M2M0ZDRlMmNkNjM0MCIsInBheWVyIjoiMHg0MWY0RkZENjMyNjlGRmVBMTZjZUUyQjkwZjFhMDE1YWZBMEZiOTU1IiwicGF5VG8iOiIweDBkMjVBNDRmNzQ4NjhlQ0U1M0IzMDVDOTcxMzlDRjRCNjI5NjM0MTAiLCJyZXNvdXJjZSI6Imh0dHA6Ly8xMjcuMC4wLjE6MzY3MTcvYXBpL3YxL29yYWNsZSIsInRvb2xOYW1lIjoiaHR0cDpHRVQ6L2FwaS92MS9vcmFjbGUiLCJzZXR0bGVkQXQiOiIyMDI2LTExLTIyVDA2OjQyOjAyLjY2OVoiLCJmYWNpbGl0YXRvciI6Imh0dHBzOi8veDQwMi5vcmcvZmFjaWxpdGF0b3IiLCJtb2RlIjoibGl2ZV90ZXN0bmV0Iiwibm9uY2UiOiIweGM1YzA1N2M1MGM1ZTY4MTRiYWUwZTVkZWE1MmUyMmMxNWJkYzU0N2RiZjczZmNkNGZmZjEwNWU3ZjZjOGQzOTQifQ==",
+        "signatures": [
+          {
+            "keyid": "ed25519:76921d7540c827b1",
+            "sig": "uxx9KwfUIo0BHvlR05/4LuqK370+7B2KGTCZ4s0DkiKeeqM/vk+MbBsvESerDeHghUXnbQHl8r5DTUFghCT6DA=="
+          }
+        ]
+      }
+    }
+  }
+}

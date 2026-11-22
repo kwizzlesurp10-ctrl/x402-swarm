@@ -1,0 +1,23 @@
+{
+  "id": "lightning-402",
+  "name": "lightning-402",
+  "title": "Lightning-402 Dual-Rail Paid MCP Server",
+  "description": "Paid MCP and HTTP 402 server supporting Base Sepolia USDC (exact) and BOLT11 Lightning preimage payments.",
+  "url": "http://127.0.0.1:4021",
+  "mcpEndpoint": "http://127.0.0.1:4021/mcp",
+  "wellKnownUrl": "http://127.0.0.1:4021/.well-known/x402",
+  "paidEndpoint": "http://127.0.0.1:4021/api/v1/oracle",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:84532",
+    "lightning:testnet"
+  ],
+  "schemes": [
+    "exact",
+    "lightning"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "1000",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-22T06:05:00.000Z"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.kwizzlesurp/lightning-402",
+  "title": "Lightning-402 MCP Server",
+  "description": "Dual-rail x402 v2 MCP server supporting Base Sepolia USDC and Lightning Network BOLT11 preimages.",
+  "version": "0.1.0",
+  "websiteUrl": "https://kwizzlesurp.com",
+  "repository": {
+    "url": "https://github.com/kwizzlesurp10-ctrl/x402-swarm",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:4021/mcp"
+    }
+  ],
+  "author": {
+    "name": "Keith S.",
+    "email": "kwizzlesurp10@gmail.com",
+    "url": "https://kwizzlesurp.com"
+  },
+  "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "location": "Minneapolis, MN, USA",
+  "x402": {
+    "x402Version": 2,
+    "schemes": ["exact", "lightning"],
+    "networks": ["eip155:84532", "lightning:testnet"],
+    "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+  }
+}

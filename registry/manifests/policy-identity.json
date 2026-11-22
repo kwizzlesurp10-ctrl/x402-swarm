@@ -1,0 +1,22 @@
+{
+  "id": "policy-identity",
+  "name": "policy-identity",
+  "title": "x402 Policy & Agent Identity Guard MCP",
+  "description": "Pre-sign SpendPolicyEngine, integer micro-USD/msat spend caps, Ed25519 DSSE agent identities, and revocation.",
+  "url": "http://127.0.0.1:4025",
+  "mcpEndpoint": "http://127.0.0.1:4025/mcp",
+  "wellKnownUrl": "http://127.0.0.1:4025/.well-known/x402",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:84532",
+    "lightning:testnet"
+  ],
+  "schemes": [
+    "exact",
+    "lightning"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "0",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-22T06:50:00.000Z"
+}

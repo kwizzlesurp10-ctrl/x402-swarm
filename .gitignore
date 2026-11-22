@@ -1,0 +1,7 @@
+node_modules/
+.keystore/
+.env
+.env.local
+dist/
+*.tsbuildinfo
+registry/*.tmp.jsonl

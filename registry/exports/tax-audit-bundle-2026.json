@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "payloadType": "application/vnd.x402.tax-audit+json",
+  "taxYear": 2026,
+  "feeBps": "250",
+  "generatedAt": "2026-11-22T06:55:08.767Z",
+  "recordCount": 5,
+  "csv": "date_utc,tx_hash,network,scheme,asset,payer,pay_to,gross_micro_usd,gross_usd,amount_msat,fee_micro_usd,net_micro_usd,net_usd,tax_category,batch_id,receipt_verified\r\n2026-11-22T06:42:02.669Z,0x4d4f49caf594e8264b63d5f2da5d44c0477da26c53beeb173673c4d4e2cd6340,eip155:84532,exact,0x036CbD53842c5426634e7929541eC2318f3dCF7e,0x41f4FFD63269FFeA16ceE2B90f1a015afA0Fb955,0x0d25A44f74868eCE53B305C97139CF4B62963410,1000,0.001000,0,25,975,0.000975,x402_evm_micropayment_revenue,batch-verify-6mcp,true\r\n2026-11-22T06:55:08.685Z,local-eip3009-8c5f1682cd0f34c2f01748632fccb6754c0f84023f3159e53aa94442e170da2e,eip155:84532,exact,0x036CbD53842c5426634e7929541eC2318f3dCF7e,0x57a3b278e27E333126d2ea19fC03C5eD3fD81617,0x0d25A44f74868eCE53B305C97139CF4B62963410,1000,0.001000,0,25,975,0.000975,x402_evm_micropayment_revenue,batch-verify-6mcp,true\r\n2026-11-22T06:55:08.696Z,ln:ed7b4423dfc3acf41c22a5442a4ac4d63c862d4d2f68ee4a0514c4448bfdf7ec,lightning:testnet,lightning,MSAT,ln-payer:ac1e2603b9ae,0x0d25A44f74868eCE53B305C97139CF4B62963410,1080000,1.080000,12000,27000,1053000,1.053000,x402_lightning_micropayment_revenue,batch-verify-6mcp,true\r\n2026-11-22T06:55:08.701Z,ln:5c856250e265028cd99b33141715986a82d6ca45427962d6c66866a892241755,lightning:testnet,lightning,MSAT,ln-payer:ac1e2603b9ae,0x0d25A44f74868eCE53B305C97139CF4B62963410,1080000,1.080000,12000,27000,1053000,1.053000,x402_lightning_micropayment_revenue,batch-verify-6mcp,true\r\n2026-11-22T06:55:08.713Z,local-eip3009-f75314cdad3a292ce8328ca850329d424a89ee89e92fd3c78af65efe271176e8,eip155:84532,exact,0x036CbD53842c5426634e7929541eC2318f3dCF7e,0x57a3b278e27E333126d2ea19fC03C5eD3fD81617,0x0d25A44f74868eCE53B305C97139CF4B62963410,1000,0.001000,0,25,975,0.000975,x402_evm_micropayment_revenue,batch-verify-6mcp,true\r\n",
+  "form8949Summary": {
+    "taxYear": 2026,
+    "feeBps": "250",
+    "recordCount": 5,
+    "groups": [
+      {
+        "taxYear": 2026,
+        "network": "eip155:84532",
+        "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+        "scheme": "exact",
+        "transactionCount": 3,
+        "grossMicroUsd": "3000",
+        "grossUsd": "0.003000",
+        "feeMicroUsd": "75",
+        "netMicroUsd": "2925",
+        "netUsd": "0.002925",
+        "amountMsat": "0",
+        "verifiedCount": 3,
+        "unverifiedCount": 0,
+        "firstSettledAt": "2026-11-22T06:42:02.669Z",
+        "lastSettledAt": "2026-11-22T06:55:08.713Z"
+      },
+      {
+        "taxYear": 2026,
+        "network": "lightning:testnet",
+        "asset": "MSAT",
+        "scheme": "lightning",
+        "transactionCount": 2,
+        "grossMicroUsd": "2160000",
+        "grossUsd": "2.160000",
+        "feeMicroUsd": "54000",
+        "netMicroUsd": "2106000",
+        "netUsd": "2.106000",
+        "amountMsat": "24000",
+        "verifiedCount": 2,
+        "unverifiedCount": 0,
+        "firstSettledAt": "2026-11-22T06:55:08.696Z",
+        "lastSettledAt": "2026-11-22T06:55:08.701Z"
+      }
+    ],
+    "totals": {
+      "transactionCount": 5,
+      "grossMicroUsd": "2163000",
+      "grossUsd": "2.163000",
+      "feeMicroUsd": "54075",
+      "netMicroUsd": "2108925",
+      "netUsd": "2.108925",
+      "amountMsat": "24000",
+      "verifiedCount": 5,
+      "unverifiedCount": 0
+    }
+  },
+  "recordChainDigest": "0c7c44b5f1ca4284789365b326baf3a801cf431a982724571de616f157129f50",
+  "bundleDigest": "772ee2d6073a94a42f7aa1d680209c98aa8c05e06751eafa4abe8d47e97e50b9",
+  "keyid": "ed25519:76921d7540c827b1",
+  "dsse": {
+    "payloadType": "application/vnd.x402.tax-audit+json",
+    "payload": "eyJ2ZXJzaW9uIjoiMS4wLjAiLCJ0YXhZZWFyIjoyMDI2LCJmZWVCcHMiOiIyNTAiLCJnZW5lcmF0ZWRBdCI6IjIwMjYtMTEtMjJUMDY6NTU6MDguNzY3WiIsInJlY29yZENvdW50Ijo1LCJjc3ZEaWdlc3QiOiJiN2FhMzBkZDc5ZTQwNGU3YjA0YTU1MDU3NThmOThhNjAzNDc4ZmFhMWMwMzVhZWY5MGE5ZmViZTNlY2Q3ZTJmIiwiZm9ybTg5NDlTdW1tYXJ5Ijp7InRheFllYXIiOjIwMjYsImZlZUJwcyI6IjI1MCIsInJlY29yZENvdW50Ijo1LCJncm91cHMiOlt7InRheFllYXIiOjIwMjYsIm5ldHdvcmsiOiJlaXAxNTU6ODQ1MzIiLCJhc3NldCI6IjB4MDM2Q2JENTM4NDJjNTQyNjYzNGU3OTI5NTQxZUMyMzE4ZjNkQ0Y3ZSIsInNjaGVtZSI6ImV4YWN0IiwidHJhbnNhY3Rpb25Db3VudCI6MywiZ3Jvc3NNaWNyb1VzZCI6IjMwMDAiLCJncm9zc1VzZCI6IjAuMDAzMDAwIiwiZmVlTWljcm9Vc2QiOiI3NSIsIm5ldE1pY3JvVXNkIjoiMjkyNSIsIm5ldFVzZCI6IjAuMDAyOTI1IiwiYW1vdW50TXNhdCI6IjAiLCJ2ZXJpZmllZENvdW50IjozLCJ1bnZlcmlmaWVkQ291bnQiOjAsImZpcnN0U2V0dGxlZEF0IjoiMjAyNi0xMS0yMlQwNjo0MjowMi42NjlaIiwibGFzdFNldHRsZWRBdCI6IjIwMjYtMTEtMjJUMDY6NTU6MDguNzEzWiJ9LHsidGF4WWVhciI6MjAyNiwibmV0d29yayI6ImxpZ2h0bmluZzp0ZXN0bmV0IiwiYXNzZXQiOiJNU0FUIiwic2NoZW1lIjoibGlnaHRuaW5nIiwidHJhbnNhY3Rpb25Db3VudCI6MiwiZ3Jvc3NNaWNyb1VzZCI6IjIxNjAwMDAiLCJncm9zc1VzZCI6IjIuMTYwMDAwIiwiZmVlTWljcm9Vc2QiOiI1NDAwMCIsIm5ldE1pY3JvVXNkIjoiMjEwNjAwMCIsIm5ldFVzZCI6IjIuMTA2MDAwIiwiYW1vdW50TXNhdCI6IjI0MDAwIiwidmVyaWZpZWRDb3VudCI6MiwidW52ZXJpZmllZENvdW50IjowLCJmaXJzdFNldHRsZWRBdCI6IjIwMjYtMTEtMjJUMDY6NTU6MDguNjk2WiIsImxhc3RTZXR0bGVkQXQiOiIyMDI2LTExLTIyVDA2OjU1OjA4LjcwMVoifV0sInRvdGFscyI6eyJ0cmFuc2FjdGlvbkNvdW50Ijo1LCJncm9zc01pY3JvVXNkIjoiMjE2MzAwMCIsImdyb3NzVXNkIjoiMi4xNjMwMDAiLCJmZWVNaWNyb1VzZCI6IjU0MDc1IiwibmV0TWljcm9Vc2QiOiIyMTA4OTI1IiwibmV0VXNkIjoiMi4xMDg5MjUiLCJhbW91bnRNc2F0IjoiMjQwMDAiLCJ2ZXJpZmllZENvdW50Ijo1LCJ1bnZlcmlmaWVkQ291bnQiOjB9fSwicmVjb3JkQ2hhaW5EaWdlc3QiOiIwYzdjNDRiNWYxY2E0Mjg0Nzg5MzY1YjMyNmJhZjNhODAxY2Y0MzFhOTgyNzI0NTcxZGU2MTZmMTU3MTI5ZjUwIiwiYnVuZGxlRGlnZXN0IjoiNzcyZWUyZDYwNzNhOTRhNDJmN2FhMWQ2ODAyMDljOThhYThjMDVlMDY3NTFlYWZhNGFiZThkNDdlOTdlNTBiOSJ9",
+    "signatures": [
+      {
+        "keyid": "ed25519:76921d7540c827b1",
+        "sig": "3I7pySXAP1dNGe0mpx/7mHHF2NGzHtUv1Wi5BX3K2cLD4s+bN44j6ta83A8xpzQ5dR2uroknXk5eMlHHl6d6Dw=="
+      }
+    ]
+  }
+}

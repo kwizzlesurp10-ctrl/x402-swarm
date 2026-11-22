@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.kwizzlesurp10-ctrl/x402-gate",
+  "title": "402-Gate Universal x402 MCP Server",
+  "description": "Universal x402 v2 paidTool adapter and REST/MCP paywall gateway with EIP-3009 and DSSE receipts.",
+  "version": "0.1.0",
+  "websiteUrl": "https://kwizzlesurp.com",
+  "repository": {
+    "url": "https://github.com/kwizzlesurp10-ctrl/x402-swarm",
+    "source": "github",
+    "subfolder": "mcps/gate"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:4020/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "author": "Keith S.",
+      "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+      "website": "https://kwizzlesurp.com",
+      "contact": "kwizzlesurp10@gmail.com",
+      "location": "Minneapolis, MN, USA",
+      "tools": [
+        "gate_pricing_manifest",
+        "paid_json_transform",
+        "paid_hash_attest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.kwizzlesurp10-ctrl/x402-policy-identity",
+  "title": "x402 Agent Policy & Identity MCP",
+  "description": "Agent capability attestations, retired-payee guards, and integer micro-USD spend policy verdicts.",
+  "version": "0.1.0",
+  "websiteUrl": "https://kwizzlesurp.com",
+  "repository": {
+    "url": "https://github.com/kwizzlesurp10-ctrl/x402-swarm",
+    "source": "github",
+    "subfolder": "mcps/policy"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:4025/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "author": "Keith S.",
+      "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+      "website": "https://kwizzlesurp.com",
+      "contact": "kwizzlesurp10@gmail.com",
+      "location": "Minneapolis, MN, USA",
+      "tools": [
+        "register_agent_policy",
+        "evaluate_payment_request",
+        "record_agent_spend",
+        "verify_agent_identity",
+        "revoke_agent_identity"
+      ]
+    }
+  }
+}
