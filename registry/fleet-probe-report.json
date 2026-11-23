@@ -1,8 +1,8 @@
 {
-  "probedAt": "2026-11-22T07:28:20.411Z",
-  "catalogCount": 10,
-  "fleetHostsProbed": 4,
-  "verifiedCount": 4,
+  "probedAt": "2026-11-23T07:56:40.724Z",
+  "catalogCount": 12,
+  "fleetHostsProbed": 6,
+  "verifiedCount": 6,
   "failedCount": 0,
   "fleet": [
     {
@@ -10,7 +10,7 @@
       "url": "https://alpha-sentinel-mcp.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 633,
+      "latencyMs": 594,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -55,11 +55,109 @@
       "priceMicroUsd": "5000"
     },
     {
+      "id": "apexseo-geo-mcp",
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "status": "verified",
+      "score": 100,
+      "latencyMs": 729,
+      "wellKnownTrustTxtStatus": 200,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /.well-known/x402 returned 200 OK JSON metadata"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /mcp and GET /mcp/ both returned 200 OK JSON server cards"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": true,
+          "status": 200,
+          "detail": "MCP initialize + tools/list succeeded for apexseo-geo-mcp (6 tools)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": true,
+          "status": 402,
+          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+        }
+      ],
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": [
+        "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+      ],
+      "priceMicroUsd": "10000"
+    },
+    {
+      "id": "civicpulse-402",
+      "url": "https://civicpulse-402.vercel.app",
+      "status": "verified",
+      "score": 100,
+      "latencyMs": 676,
+      "wellKnownTrustTxtStatus": 200,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /.well-known/x402 returned 200 OK JSON metadata"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /mcp and GET /mcp/ both returned 200 OK JSON server cards"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": true,
+          "status": 200,
+          "detail": "MCP initialize + tools/list succeeded for x402-mcp-civicpulse-gateway (2 tools)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": true,
+          "status": 402,
+          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+        }
+      ],
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": [
+        "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+      ],
+      "priceMicroUsd": "10000"
+    },
+    {
       "id": "x402-crediting-swarm",
       "url": "https://x402-crediting-swarm.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 858,
+      "latencyMs": 791,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -108,7 +206,7 @@
       "url": "https://x402-mcp.onrender.com",
       "status": "verified",
       "score": 100,
-      "latencyMs": 1183,
+      "latencyMs": 764,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -157,7 +255,7 @@
       "url": "https://x402orcle.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 758,
+      "latencyMs": 692,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {

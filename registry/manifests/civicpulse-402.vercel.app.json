@@ -1,0 +1,21 @@
+{
+  "id": "civicpulse-402",
+  "name": "civicpulse-402.vercel.app",
+  "title": "CivicPulse 402 Municipal Compliance Gateway",
+  "description": "Real-time municipal housing violations and parcel GIS audits via Base USDC ($0.01) x402.",
+  "url": "https://civicpulse-402.vercel.app",
+  "mcpEndpoint": "https://civicpulse-402.vercel.app/mcp",
+  "wellKnownUrl": "https://civicpulse-402.vercel.app/.well-known/x402",
+  "paidEndpoint": "https://civicpulse-402.vercel.app/api/v1/compliance",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:8453"
+  ],
+  "schemes": [
+    "exact"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "10000",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-23T07:53:00.000Z"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "apexseo-geo-mcp",
+  "name": "apexseo-geo-mcp.vercel.app",
+  "title": "ApexSEO GEO & AI-Crawler Audit MCP",
+  "description": "Keyless Base USDC x402 MCP for live AI-crawler, GEO/AEO & JSON-LD citation audits.",
+  "url": "https://apexseo-geo-mcp.vercel.app",
+  "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+  "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+  "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/api/audit/crawlers",
+  "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+  "networks": [
+    "eip155:8453"
+  ],
+  "schemes": [
+    "exact"
+  ],
+  "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+  "priceMicroUsd": "10000",
+  "status": "seeded_pending_live_probe",
+  "updatedAt": "2026-11-23T07:53:00.000Z"
+}

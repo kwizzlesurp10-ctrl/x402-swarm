@@ -38,7 +38,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "5000",
     "status": "verified",
-    "updatedAt": "2026-11-22T07:28:17.611Z",
+    "updatedAt": "2026-11-23T07:56:37.070Z",
     "validation": {
       "url": "https://alpha-sentinel-mcp.vercel.app",
       "valid": true,
@@ -84,8 +84,146 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "5000",
-      "latencyMs": 633,
-      "checkedAt": "2026-11-22T07:28:17.611Z"
+      "latencyMs": 594,
+      "checkedAt": "2026-11-23T07:56:37.070Z"
+    }
+  },
+  {
+    "id": "apexseo-geo-mcp",
+    "name": "apexseo-geo-mcp.vercel.app",
+    "title": "ApexSEO GEO & AI-Crawler Audit MCP",
+    "description": "Keyless Base USDC x402 MCP for live AI-crawler, GEO/AEO & JSON-LD citation audits.",
+    "url": "https://apexseo-geo-mcp.vercel.app",
+    "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+    "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+    "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/api/audit/crawlers",
+    "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+    "networks": [
+      "eip155:8453"
+    ],
+    "schemes": [
+      "exact"
+    ],
+    "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+    "priceMicroUsd": "10000",
+    "status": "verified",
+    "updatedAt": "2026-11-23T07:56:37.800Z",
+    "validation": {
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "valid": true,
+      "score": 100,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /.well-known/x402 returned 200 OK JSON metadata"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /mcp and GET /mcp/ both returned 200 OK JSON server cards"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": true,
+          "status": 200,
+          "detail": "MCP initialize + tools/list succeeded for apexseo-geo-mcp (6 tools)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": true,
+          "status": 402,
+          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+        }
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "networks": [
+        "eip155:8453"
+      ],
+      "payTo": [
+        "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+      ],
+      "priceMicroUsd": "10000",
+      "latencyMs": 729,
+      "checkedAt": "2026-11-23T07:56:37.800Z"
+    }
+  },
+  {
+    "id": "civicpulse-402",
+    "name": "civicpulse-402.vercel.app",
+    "title": "CivicPulse 402 Municipal Compliance Gateway",
+    "description": "Real-time municipal housing violations and parcel GIS audits via Base USDC ($0.01) x402.",
+    "url": "https://civicpulse-402.vercel.app",
+    "mcpEndpoint": "https://civicpulse-402.vercel.app/mcp",
+    "wellKnownUrl": "https://civicpulse-402.vercel.app/.well-known/x402",
+    "paidEndpoint": "https://civicpulse-402.vercel.app/api/v1/compliance",
+    "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+    "networks": [
+      "eip155:8453"
+    ],
+    "schemes": [
+      "exact"
+    ],
+    "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+    "priceMicroUsd": "10000",
+    "status": "verified",
+    "updatedAt": "2026-11-23T07:56:38.476Z",
+    "validation": {
+      "url": "https://civicpulse-402.vercel.app",
+      "valid": true,
+      "score": 100,
+      "checks": [
+        {
+          "name": "well_known_x402",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /.well-known/x402 returned 200 OK JSON metadata"
+        },
+        {
+          "name": "mcp_get_card",
+          "passed": true,
+          "status": 200,
+          "detail": "GET /mcp and GET /mcp/ both returned 200 OK JSON server cards"
+        },
+        {
+          "name": "mcp_initialize_and_tools",
+          "passed": true,
+          "status": 200,
+          "detail": "MCP initialize + tools/list succeeded for x402-mcp-civicpulse-gateway (2 tools)"
+        },
+        {
+          "name": "paid_402_challenge",
+          "passed": true,
+          "status": 402,
+          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+        },
+        {
+          "name": "retired_payee_guard",
+          "passed": true,
+          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+        }
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "networks": [
+        "eip155:8453"
+      ],
+      "payTo": [
+        "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+      ],
+      "priceMicroUsd": "10000",
+      "latencyMs": 676,
+      "checkedAt": "2026-11-23T07:56:38.476Z"
     }
   },
   {
@@ -218,7 +356,7 @@
     "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
     "priceMicroUsd": "50000",
     "status": "verified",
-    "updatedAt": "2026-11-22T07:28:18.469Z",
+    "updatedAt": "2026-11-23T07:56:39.267Z",
     "validation": {
       "url": "https://x402-crediting-swarm.vercel.app",
       "valid": true,
@@ -264,8 +402,8 @@
         "0x0d25a44f74868ece53b305c97139cf4b62963410"
       ],
       "priceMicroUsd": "50000",
-      "latencyMs": 858,
-      "checkedAt": "2026-11-22T07:28:18.469Z"
+      "latencyMs": 791,
+      "checkedAt": "2026-11-23T07:56:39.267Z"
     }
   },
   {
@@ -286,7 +424,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-22T07:28:19.652Z",
+    "updatedAt": "2026-11-23T07:56:40.031Z",
     "validation": {
       "url": "https://x402-mcp.onrender.com",
       "valid": true,
@@ -332,8 +470,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 1183,
-      "checkedAt": "2026-11-22T07:28:19.652Z"
+      "latencyMs": 764,
+      "checkedAt": "2026-11-23T07:56:40.031Z"
     }
   },
   {
@@ -354,7 +492,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "100000",
     "status": "verified",
-    "updatedAt": "2026-11-22T07:28:20.410Z",
+    "updatedAt": "2026-11-23T07:56:40.723Z",
     "validation": {
       "url": "https://x402orcle.vercel.app",
       "valid": true,
@@ -400,8 +538,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "100000",
-      "latencyMs": 758,
-      "checkedAt": "2026-11-22T07:28:20.410Z"
+      "latencyMs": 692,
+      "checkedAt": "2026-11-23T07:56:40.723Z"
     }
   }
 ]
