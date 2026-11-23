@@ -1,5 +1,5 @@
 {
-  "probedAt": "2026-11-23T07:56:40.724Z",
+  "probedAt": "2026-11-23T08:47:10.027Z",
   "catalogCount": 12,
   "fleetHostsProbed": 6,
   "verifiedCount": 6,
@@ -10,7 +10,7 @@
       "url": "https://alpha-sentinel-mcp.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 594,
+      "latencyMs": 1277,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -59,7 +59,7 @@
       "url": "https://apexseo-geo-mcp.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 729,
+      "latencyMs": 1376,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -108,7 +108,7 @@
       "url": "https://civicpulse-402.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 676,
+      "latencyMs": 1757,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -157,7 +157,7 @@
       "url": "https://x402-crediting-swarm.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 791,
+      "latencyMs": 1725,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -206,7 +206,7 @@
       "url": "https://x402-mcp.onrender.com",
       "status": "verified",
       "score": 100,
-      "latencyMs": 764,
+      "latencyMs": 1068,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -255,7 +255,7 @@
       "url": "https://x402orcle.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 692,
+      "latencyMs": 1003,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {

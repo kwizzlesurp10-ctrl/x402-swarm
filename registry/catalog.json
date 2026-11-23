@@ -38,7 +38,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "5000",
     "status": "verified",
-    "updatedAt": "2026-11-23T07:56:37.070Z",
+    "updatedAt": "2026-11-23T08:47:03.096Z",
     "validation": {
       "url": "https://alpha-sentinel-mcp.vercel.app",
       "valid": true,
@@ -84,8 +84,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "5000",
-      "latencyMs": 594,
-      "checkedAt": "2026-11-23T07:56:37.070Z"
+      "latencyMs": 1277,
+      "checkedAt": "2026-11-23T08:47:03.096Z"
     }
   },
   {
@@ -107,7 +107,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-23T07:56:37.800Z",
+    "updatedAt": "2026-11-23T08:47:04.473Z",
     "validation": {
       "url": "https://apexseo-geo-mcp.vercel.app",
       "valid": true,
@@ -153,8 +153,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 729,
-      "checkedAt": "2026-11-23T07:56:37.800Z"
+      "latencyMs": 1376,
+      "checkedAt": "2026-11-23T08:47:04.473Z"
     }
   },
   {
@@ -176,7 +176,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-23T07:56:38.476Z",
+    "updatedAt": "2026-11-23T08:47:06.230Z",
     "validation": {
       "url": "https://civicpulse-402.vercel.app",
       "valid": true,
@@ -222,8 +222,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 676,
-      "checkedAt": "2026-11-23T07:56:38.476Z"
+      "latencyMs": 1757,
+      "checkedAt": "2026-11-23T08:47:06.230Z"
     }
   },
   {
@@ -356,7 +356,7 @@
     "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
     "priceMicroUsd": "50000",
     "status": "verified",
-    "updatedAt": "2026-11-23T07:56:39.267Z",
+    "updatedAt": "2026-11-23T08:47:07.954Z",
     "validation": {
       "url": "https://x402-crediting-swarm.vercel.app",
       "valid": true,
@@ -402,8 +402,8 @@
         "0x0d25a44f74868ece53b305c97139cf4b62963410"
       ],
       "priceMicroUsd": "50000",
-      "latencyMs": 791,
-      "checkedAt": "2026-11-23T07:56:39.267Z"
+      "latencyMs": 1725,
+      "checkedAt": "2026-11-23T08:47:07.954Z"
     }
   },
   {
@@ -424,7 +424,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-23T07:56:40.031Z",
+    "updatedAt": "2026-11-23T08:47:09.023Z",
     "validation": {
       "url": "https://x402-mcp.onrender.com",
       "valid": true,
@@ -470,8 +470,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 764,
-      "checkedAt": "2026-11-23T07:56:40.031Z"
+      "latencyMs": 1068,
+      "checkedAt": "2026-11-23T08:47:09.023Z"
     }
   },
   {
@@ -492,7 +492,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "100000",
     "status": "verified",
-    "updatedAt": "2026-11-23T07:56:40.723Z",
+    "updatedAt": "2026-11-23T08:47:10.026Z",
     "validation": {
       "url": "https://x402orcle.vercel.app",
       "valid": true,
@@ -538,8 +538,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "100000",
-      "latencyMs": 692,
-      "checkedAt": "2026-11-23T07:56:40.723Z"
+      "latencyMs": 1003,
+      "checkedAt": "2026-11-23T08:47:10.026Z"
     }
   }
 ]
