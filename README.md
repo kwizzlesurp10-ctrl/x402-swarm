@@ -50,14 +50,36 @@ Verification artifacts live in [registry/verification-report.json](registry/veri
 
 ---
 
+## Cost-Aware Model Routing (Vercel AI Gateway)
+
+The gateway supports **Cost-Aware Model Routing** via dedicated decision models and tiered execution targets:
+- **Decision Models (Complexity Classification):**
+  - `perplexity/pplx-decider-flash-v1.3`: **$0.01 / 1M input tokens** (`10,000n` µUSD)
+  - `liquid/d1.2`: **$0.02 / 1M input tokens** (`20,000n` µUSD)
+  - `microsoft/decision-1.1`: **$0.04 / 1M input tokens** (`40,000n` µUSD, Zero Data Retention)
+- **Execution Tiers:**
+  - **Economy:** `router/pandaforge` (backed by zero-cost promotional `reflection/beam` router)
+  - **Frontier:** `openai/gpt-5.6-luna` (for high-probability complex reasoning)
+- **MCP Integration:**
+  - `paid_economy_route` (`100` micro-USD = `$0.000100` Base Sepolia USDC): EIP-3009 x402 tool with Ed25519 DSSE attestation.
+  - `economy_route_triage`: Free preview triage tool.
+- **Harness & Verification:**
+  - Offline suite: `npm run test:economy-route`
+  - Live AI Gateway test: `npx tsx harness/live-gateway-test.ts`
+
+---
+
 ## Quickstart Commands
 
 ```bash
 # Install dependencies
 npm install
 
-# Typecheck and run all 6 MCP server test suites
+# Typecheck and run all MCP server test suites + economy router
 npm run test:all
+
+# Run individual economy router test suite
+npm run test:economy-route
 
 # Run the full end-to-end swarm verification harness (writes verification-report.json)
 npm run verify:swarm
@@ -68,6 +90,7 @@ npm run probe:fleet
 
 Individual server suites from [package.json](package.json):
 - `npm run typecheck` — `tsc --noEmit`
+- `npm run test:economy-route` — `npx tsx harness/test-economy-router.ts`
 - `npm run test:gate` — `npx tsx mcps/gate/test.ts`
 - `npm run test:lightning` — `npx tsx mcps/lightning/test.ts`
 - `npm run test:discovery` — `npx tsx mcps/discovery/test.ts`
