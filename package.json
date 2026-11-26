@@ -13,7 +13,8 @@
     "test:policy": "npx tsx mcps/policy/test.ts",
     "test:settlement": "npx tsx mcps/settlement/test.ts",
     "test:tax": "npx tsx mcps/tax/test.ts",
-    "test:all": "npm run typecheck && npm run test:gate && npm run test:lightning && npm run test:discovery && npm run test:policy && npm run test:settlement && npm run test:tax",
+    "test:economy-route": "npx tsx harness/test-economy-router.ts",
+    "test:all": "npm run typecheck && npm run test:economy-route && npm run test:gate && npm run test:lightning && npm run test:discovery && npm run test:policy && npm run test:settlement && npm run test:tax",
     "verify:swarm": "npx tsx harness/verify-swarm.ts",
     "probe:fleet": "npx tsx harness/probe-fleet.ts"
   },

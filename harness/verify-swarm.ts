@@ -33,7 +33,7 @@ import { startGateServer } from "../mcps/gate/server.js";
 import { createTestLightningSimulator } from "../mcps/lightning/bolt11.js";
 import { startLightning402Server } from "../mcps/lightning/server.js";
 import { startPolicyServer } from "../mcps/policy/server.js";
-import { formatMicroUsd } from "../mcps/settlement/ledger.js";
+import { formatMicroUsd, verifySettlementReceipt } from "../mcps/settlement/ledger.js";
 import { startSettlementServer } from "../mcps/settlement/server.js";
 import { startTaxServer } from "../mcps/tax/server.js";
 import { startLocalFacilitator } from "./local-facilitator.js";
@@ -247,7 +247,14 @@ async function main() {
       if (prevProbe?.liveOnchainSettled && prevProbe.handshake_tx) {
         preservedLiveProbe = prevReport.liveFacilitatorProbe as Record<string, unknown>;
         if (prevProbe.body?.settlement) {
-          preservedLiveReceipt = prevProbe.body.settlement;
+          const v = verifySettlementReceipt(
+            prevProbe.body.settlement,
+            undefined,
+            DEFAULT_KEYSTORE_PATH
+          );
+          if (v.valid) {
+            preservedLiveReceipt = prevProbe.body.settlement;
+          }
         }
       }
     } catch {

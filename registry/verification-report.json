@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-22T06:55:08.773Z",
+  "verifiedAt": "2026-11-26T00:52:33.994Z",
   "keystore": {
     "path": "/home/keef/x402-swarm/.keystore/ed25519.pem",
-    "keyid": "ed25519:76921d7540c827b1",
+    "keyid": "ed25519:7dd7248a7abf5a1c",
     "modeOctal": "0600"
   },
   "gateA_registryAndBrowserGet": {
@@ -85,12 +85,12 @@
     "retiredPayeeRejectedInPolicy": true
   },
   "gateC_paidGateAndDualRail": {
-    "gate402_tx": "local-eip3009-8c5f1682cd0f34c2f01748632fccb6754c0f84023f3159e53aa94442e170da2e",
+    "gate402_tx": "local-eip3009-413f67491436d04092a104b55e3a13aa6314e16006adcb8f314af73a4fa80f5a",
     "gate402_replay_rejected_status": 409,
-    "lightning_tx": "ln:ed7b4423dfc3acf41c22a5442a4ac4d63c862d4d2f68ee4a0514c4448bfdf7ec",
-    "lightning_mcp_tx": "ln:5c856250e265028cd99b33141715986a82d6ca45427962d6c66866a892241755",
+    "lightning_tx": "ln:0bf5bf0d7ad41aa7ad0f29430a629518bc759bd8606787f90b81f883bc7d523c",
+    "lightning_mcp_tx": "ln:d542bd1613483efe9483768941227d74065eb173a6ef3398726165eb1c4bb326",
     "lightning_replay_rejected_status": 409,
-    "local_eip3009_tx": "local-eip3009-f75314cdad3a292ce8328ca850329d424a89ee89e92fd3c78af65efe271176e8",
+    "local_eip3009_tx": "local-eip3009-300578a1869c87d55dd6feb4ccf63fc664f4d3da844e59a6d6bb342c76239d97",
     "local_eip3009_replay_rejected_status": 409
   },
   "gateD_discovery": {
@@ -101,10 +101,10 @@
   },
   "gateE_settlementAndTax": {
     "ledgerPath": "registry/testnet-ledger.jsonl",
-    "ingestedCount": 5,
-    "expectedGrossMicroUsd": "2163000",
-    "expectedGrossUsd": "2.163000",
-    "reconciledGrossMicroUsd": "2163000",
+    "ingestedCount": 4,
+    "expectedGrossMicroUsd": "2162000",
+    "expectedGrossUsd": "2.162000",
+    "reconciledGrossMicroUsd": "2162000",
     "batchSignedAndVerified": true,
     "taxAuditBundleVerified": true,
     "exports": [
@@ -116,8 +116,8 @@
   "task1": {
     "server_path": "mcps/lightning/server.ts",
     "handshake_tx": "0x4d4f49caf594e8264b63d5f2da5d44c0477da26c53beeb173673c4d4e2cd6340",
-    "local_eip3009_tx": "local-eip3009-f75314cdad3a292ce8328ca850329d424a89ee89e92fd3c78af65efe271176e8",
-    "lightning_tx": "ln:ed7b4423dfc3acf41c22a5442a4ac4d63c862d4d2f68ee4a0514c4448bfdf7ec",
+    "local_eip3009_tx": "local-eip3009-300578a1869c87d55dd6feb4ccf63fc664f4d3da844e59a6d6bb342c76239d97",
+    "lightning_tx": "ln:0bf5bf0d7ad41aa7ad0f29430a629518bc759bd8606787f90b81f883bc7d523c",
     "cap_enforced": true
   },
   "task2": {
@@ -129,7 +129,7 @@
     "settlement_server_path": "mcps/settlement/server.ts",
     "tax_server_path": "mcps/tax/server.ts",
     "dsse_verified": true,
-    "gross_micro_usd": "2163000"
+    "gross_micro_usd": "2162000"
   },
   "liveFacilitatorProbe": {
     "reachable": true,
