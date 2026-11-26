@@ -38,7 +38,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "5000",
     "status": "verified",
-    "updatedAt": "2026-11-23T08:47:03.096Z",
+    "updatedAt": "2026-11-26T00:57:37.070Z",
     "validation": {
       "url": "https://alpha-sentinel-mcp.vercel.app",
       "valid": true,
@@ -84,8 +84,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "5000",
-      "latencyMs": 1277,
-      "checkedAt": "2026-11-23T08:47:03.096Z"
+      "latencyMs": 1725,
+      "checkedAt": "2026-11-26T00:57:37.070Z"
     }
   },
   {
@@ -107,7 +107,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-23T08:47:04.473Z",
+    "updatedAt": "2026-11-26T00:57:38.799Z",
     "validation": {
       "url": "https://apexseo-geo-mcp.vercel.app",
       "valid": true,
@@ -153,8 +153,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 1376,
-      "checkedAt": "2026-11-23T08:47:04.473Z"
+      "latencyMs": 1729,
+      "checkedAt": "2026-11-26T00:57:38.799Z"
     }
   },
   {
@@ -176,7 +176,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-23T08:47:06.230Z",
+    "updatedAt": "2026-11-26T00:57:41.555Z",
     "validation": {
       "url": "https://civicpulse-402.vercel.app",
       "valid": true,
@@ -222,8 +222,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 1757,
-      "checkedAt": "2026-11-23T08:47:06.230Z"
+      "latencyMs": 2755,
+      "checkedAt": "2026-11-26T00:57:41.555Z"
     }
   },
   {
@@ -356,7 +356,7 @@
     "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
     "priceMicroUsd": "50000",
     "status": "verified",
-    "updatedAt": "2026-11-23T08:47:07.954Z",
+    "updatedAt": "2026-11-26T00:57:43.155Z",
     "validation": {
       "url": "https://x402-crediting-swarm.vercel.app",
       "valid": true,
@@ -402,8 +402,8 @@
         "0x0d25a44f74868ece53b305c97139cf4b62963410"
       ],
       "priceMicroUsd": "50000",
-      "latencyMs": 1725,
-      "checkedAt": "2026-11-23T08:47:07.954Z"
+      "latencyMs": 1600,
+      "checkedAt": "2026-11-26T00:57:43.155Z"
     }
   },
   {
@@ -424,7 +424,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-23T08:47:09.023Z",
+    "updatedAt": "2026-11-26T00:57:44.029Z",
     "validation": {
       "url": "https://x402-mcp.onrender.com",
       "valid": true,
@@ -470,8 +470,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 1068,
-      "checkedAt": "2026-11-23T08:47:09.023Z"
+      "latencyMs": 874,
+      "checkedAt": "2026-11-26T00:57:44.029Z"
     }
   },
   {
@@ -491,12 +491,12 @@
     ],
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "100000",
-    "status": "verified",
-    "updatedAt": "2026-11-23T08:47:10.026Z",
+    "status": "failed",
+    "updatedAt": "2026-11-26T00:57:45.152Z",
     "validation": {
       "url": "https://x402orcle.vercel.app",
-      "valid": true,
-      "score": 100,
+      "valid": false,
+      "score": 80,
       "checks": [
         {
           "name": "well_known_x402",
@@ -518,9 +518,8 @@
         },
         {
           "name": "paid_402_challenge",
-          "passed": true,
-          "status": 402,
-          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+          "passed": false,
+          "detail": "Paid endpoint probe failed: fetch failed"
         },
         {
           "name": "retired_payee_guard",
@@ -528,18 +527,16 @@
           "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
         }
       ],
-      "schemes": [
-        "exact"
-      ],
+      "schemes": [],
       "networks": [
         "eip155:8453"
       ],
       "payTo": [
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
-      "priceMicroUsd": "100000",
-      "latencyMs": 1003,
-      "checkedAt": "2026-11-23T08:47:10.026Z"
+      "priceMicroUsd": null,
+      "latencyMs": 1123,
+      "checkedAt": "2026-11-26T00:57:45.152Z"
     }
   }
 ]

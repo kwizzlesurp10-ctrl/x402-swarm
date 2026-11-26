@@ -1,16 +1,16 @@
 {
-  "probedAt": "2026-11-23T08:47:10.027Z",
+  "probedAt": "2026-11-26T00:57:45.153Z",
   "catalogCount": 12,
   "fleetHostsProbed": 6,
-  "verifiedCount": 6,
-  "failedCount": 0,
+  "verifiedCount": 5,
+  "failedCount": 1,
   "fleet": [
     {
       "id": "alpha-sentinel-mcp",
       "url": "https://alpha-sentinel-mcp.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 1277,
+      "latencyMs": 1725,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -59,7 +59,7 @@
       "url": "https://apexseo-geo-mcp.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 1376,
+      "latencyMs": 1729,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -108,7 +108,7 @@
       "url": "https://civicpulse-402.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 1757,
+      "latencyMs": 2755,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -157,7 +157,7 @@
       "url": "https://x402-crediting-swarm.vercel.app",
       "status": "verified",
       "score": 100,
-      "latencyMs": 1725,
+      "latencyMs": 1600,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -206,7 +206,7 @@
       "url": "https://x402-mcp.onrender.com",
       "status": "verified",
       "score": 100,
-      "latencyMs": 1068,
+      "latencyMs": 874,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -253,9 +253,9 @@
     {
       "id": "x402orcle",
       "url": "https://x402orcle.vercel.app",
-      "status": "verified",
-      "score": 100,
-      "latencyMs": 1003,
+      "status": "failed",
+      "score": 80,
+      "latencyMs": 1123,
       "wellKnownTrustTxtStatus": 200,
       "checks": [
         {
@@ -278,9 +278,8 @@
         },
         {
           "name": "paid_402_challenge",
-          "passed": true,
-          "status": 402,
-          "detail": "HTTP 402 challenge validated (1 accept option(s))"
+          "passed": false,
+          "detail": "Paid endpoint probe failed: fetch failed"
         },
         {
           "name": "retired_payee_guard",
@@ -297,7 +296,7 @@
       "payTo": [
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
-      "priceMicroUsd": "100000"
+      "priceMicroUsd": null
     }
   ]
 }
