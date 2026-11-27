@@ -1,5 +1,4 @@
 import {
-  RETIRED_X402_PAY_TO,
   isRetiredPayTo,
 } from "../../shared/constants.js";
 import { evaluateRequirementMicroUsd } from "../../shared/policy.js";
@@ -782,9 +781,9 @@ export async function validateEndpoint(
     passed: retiredGuardPassed,
     detail: retiredGuardPassed
       ? uniquePayTo.length > 0
-        ? `Verified ${uniquePayTo.length} payee address(es); none match retired ${RETIRED_X402_PAY_TO}`
-        : `No retired payee detected (${RETIRED_X402_PAY_TO} blocked)`
-      : `CRITICAL: Retired payee ${retiredMatches.join(", ")} detected and unconditionally rejected`,
+        ? `Verified ${uniquePayTo.length} payee address(es); all passed payee integrity policy`
+        : "Payee integrity policy verified"
+      : `CRITICAL: Payee address rejected by integrity policy`,
   });
 
   const valid =

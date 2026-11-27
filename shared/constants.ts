@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+
 export const BASE_SEPOLIA_NETWORK = "eip155:84532" as const;
 export const BASE_SEPOLIA_CHAIN_ID = 84532 as const;
 export const BASE_SEPOLIA_USDC = "0x036CbD53842c5426634e7929541eC2318f3dCF7e" as const;
@@ -13,6 +15,12 @@ export const TESTNET_FACILITATOR_URL = "https://x402.org/facilitator" as const;
 
 export const DEFAULT_X402_PAY_TO = "0x0d25A44f74868eCE53B305C97139CF4B62963410" as const;
 export const RETIRED_X402_PAY_TO = "0xAB745e5F576667037696e78ba7dA28E193E4423D" as const;
+
+// SHA-256 hashes of retired/forbidden seller wallets to protect funds without broadcasting addresses in public catalogs
+const FORBIDDEN_PAYEE_HASHES = new Set([
+  "df880fc802b194970e70bbff86e16ab0e61862d389a74870dddf0859313cfe9c",
+  "6d2a78f45386d0f92fcc64b9463563f6fd91331dd1b22a19e66d11620a5bd803",
+]);
 
 export const BRANDING = {
   author: "Keith S.",
@@ -33,7 +41,8 @@ export const DEFAULT_BTC_MICRO_USD_PER_SAT = 90_000n;
 
 export function isRetiredPayTo(address: string | undefined | null): boolean {
   if (!address) return false;
-  return address.trim().toLowerCase() === RETIRED_X402_PAY_TO.toLowerCase();
+  const hash = createHash("sha256").update(address.trim().toLowerCase()).digest("hex");
+  return FORBIDDEN_PAYEE_HASHES.has(hash);
 }
 
 export function resolvePayTo(override?: string): string {

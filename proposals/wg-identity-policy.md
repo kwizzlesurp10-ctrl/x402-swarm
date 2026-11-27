@@ -35,9 +35,9 @@ Client payment adapters MUST evaluate spend policy **before** generating any cry
      - `evmCapBlockReason`: `"Failed to create payment payload: Payment creation aborted: Requested 1000 micro-USD exceeds maxPerCallMicroUsd 500"`
      - `harness/verify-swarm.ts` asserts `lightningServer.getIntentCount() === intentsBeforeCap` after both EVM and Lightning cap rejections.
 3. **Evaluation Order (`SpendPolicyEngine.onPaymentRequested` in `shared/policy.ts`):**
-   1. **Retired Payee Check:** `isRetiredPayTo(req.payTo)` unconditionally blocks `0xAB745e5F576667037696e78ba7dA28E193E4423D` with `allowed: false`, `evaluatedMicroUsd: "0"`, `capEnforced: true`.
+   1. **Retired Payee Check:** `isRetiredPayTo(req.payTo)` unconditionally blocks retired payee addresses with `allowed: false`, `evaluatedMicroUsd: "0"`, `capEnforced: true`.
    2. **Network Allowlist:** If `allowedNetworks` is configured and non-empty, `req.network` MUST be listed.
-   3. **Payee Allowlist:** If `allowedPayees` is configured and non-empty, `req.payTo.trim().toLowerCase()` MUST match an allowed address (and `allowedPayees` registration itself MUST reject `RETIRED_X402_PAY_TO`).
+   3. **Payee Allowlist:** If `allowedPayees` is configured and non-empty, `req.payTo.trim().toLowerCase()` MUST match an allowed address (and `allowedPayees` registration itself MUST reject retired payees).
    4. **Integer Cost Evaluation:** `evaluateRequirementMicroUsd(req, btcMicroUsdPerSat)`.
    5. **Per-Call Ceiling:** Reject if `costMicroUsd > config.maxPerCallMicroUsd`.
    6. **Rolling-Window Ceiling:** Reject if `currentWindowSpend + costMicroUsd > config.maxRollingWindowMicroUsd`.
@@ -101,4 +101,4 @@ Every policy issuer and verification boundary MUST persist its signing key rathe
 
 1. **Immediate Revocation (`mcps/policy/identity.ts` & `mcps/policy/server.ts`):** Calling `revokeAgentIdentity` (`revoke_agent_identity`) marks the `agentId` revoked immediately (recording `revokedAt`, optional `reason`, and adding `attestationId` to `revokedAttestationIds`). Subsequent `verifyAgentIdentity` (`verify_agent_identity`) and `evaluatePaymentRequest` (`evaluate_payment_request`) calls return `revoked: true` and `allowed: false` regardless of remaining window budget or `expiresAt`.
 2. **Expiration Enforcement:** Attestations past `expiresAt` MUST be rejected (`expired: true`, `allowed: false`).
-3. **Retired Payee Block:** Both identity registration (`allowedPayees`) and runtime evaluation (`onPaymentRequested` in `shared/policy.ts` and `evaluatePaymentRequest` in `mcps/policy/identity.ts`) unconditionally reject `RETIRED_X402_PAY_TO` (`0xAB745e5F576667037696e78ba7dA28E193E4423D`), while servers enforce HTTP `403` (`retired_payee_rejected`) at the boundary (`mcps/lightning/server.ts`, `mcps/gate/adapter.ts`, `harness/local-facilitator.ts`).
+3. **Retired Payee Block:** Both identity registration (`allowedPayees`) and runtime evaluation (`onPaymentRequested` in `shared/policy.ts` and `evaluatePaymentRequest` in `mcps/policy/identity.ts`) unconditionally reject retired payees via `isRetiredPayTo`, while servers enforce HTTP `403` (`retired_payee_rejected`) at the boundary (`mcps/lightning/server.ts`, `mcps/gate/adapter.ts`, `harness/local-facilitator.ts`).

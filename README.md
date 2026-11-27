@@ -44,7 +44,7 @@ Verification artifacts live in [registry/verification-report.json](registry/veri
 - **Security, Policy & Audit Guarantees:**
   - Persisted Ed25519 keystore (`mode 0600`): `keyid` `ed25519:76921d7540c827b1`
   - Pre-sign spend cap enforced (`cap_enforced: true`, blocking `1000` micro-USD > `maxPerCallMicroUsd 500` before signing)
-  - Retired payee `0xAB745e5F576667037696e78ba7dA28E193E4423D` rejected in policy (`retiredPayeeRejectedInPolicy: true`), discovery (`score: 0`), and server boundary (HTTP `403`)
+  - Payee integrity guard enforced in policy (`retiredPayeeRejectedInPolicy: true`), discovery (`score: 0`), and server boundary (HTTP `403`)
   - Discovery validation: `score: 100` (`["exact", "lightning"]`, `["eip155:84532", "lightning:testnet"]`)
   - Reconciled batch `batch-verify-001` (`feeBps: "250"`): `2161000` gross micro-USD (`$2.161000`), `54025` fee micro-USD, `2106975` net micro-USD, `24000` msat, Ed25519 DSSE tax audit bundle verified.
 

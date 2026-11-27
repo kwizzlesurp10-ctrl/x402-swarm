@@ -95,17 +95,16 @@ Verified against `Lightning-402` in `registry/verification-report.json` (`gateD_
 
 ---
 
-## 5. Retired-Payee Blacklist Enforcement
+## 5. Retired-Payee Integrity Enforcement
 
 To prevent accidental funds loss when operators rotate wallets, `shared/constants.ts` defines:
 - Canonical active payee: `DEFAULT_X402_PAY_TO = "0x0d25A44f74868eCE53B305C97139CF4B62963410"`
-- Retired payee: `RETIRED_X402_PAY_TO = "0xAB745e5F576667037696e78ba7dA28E193E4423D"`
-- Helper: `isRetiredPayTo(address)` (case-insensitive trimmed equality) and `resolvePayTo(override?)` (throws unconditionally if `isRetiredPayTo` matches).
+- Integrity guard: `isRetiredPayTo(address)` (enforces hash-based blacklist without exposing legacy hex) and `resolvePayTo(override?)` (throws unconditionally if `isRetiredPayTo` matches).
 
 Discovery enforcement rules (`mcps/discovery/validator.ts` & `mcps/discovery/indexer.ts`):
 1. **Validation Gate:** Any match in `/.well-known/x402`, `/mcp`, or `402` `accepts[]` sets `retired_payee_guard.passed = false`, `valid = false`, and forces `score = 0`.
 2. **Catalog Registration Gate:** `CatalogIndexer.registerEndpoint` forces `status = "failed"` whenever `input.payTo` or `validation.payTo[]` contains a retired payee, overriding `allowUnverified`.
-3. **Seed Gate:** `CatalogIndexer.seedFromManifests` throws immediately if any manifest contains `RETIRED_X402_PAY_TO`.
+3. **Seed Gate:** `CatalogIndexer.seedFromManifests` throws immediately if any manifest contains a retired payee address.
 4. **Search Gate:** `CatalogIndexer.searchResources({ onlyValid: true })` excludes any entry whose `payTo` or `validation.payTo[]` matches `isRetiredPayTo`.
 
 ---

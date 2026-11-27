@@ -5,7 +5,7 @@ Reference specifications extracted from the production `x402-swarm` 6-server MCP
 - **Author:** Keith S. (`kwizzlesurp10@gmail.com`)
 - **Organization:** `kwizzlesurp.com` · `Sevtech` · `Dragon&PandaDuo` (`https://kwizzlesurp.com`, Minneapolis, MN, USA)
 - **Canonical `payTo`:** `0x0d25A44f74868eCE53B305C97139CF4B62963410`
-- **Blocked Retired `payTo`:** `0xAB745e5F576667037696e78ba7dA28E193E4423D`
+- **Payee Integrity:** Unconditional block on retired legacy seller wallets via hash guard
 
 ## RFC Index
 
@@ -22,12 +22,12 @@ Reference specifications extracted from the production `x402-swarm` 6-server MCP
 - [x] Route `GET /mcp` with `Accept: text/event-stream` to SSE and `POST /mcp` to JSON-RPC 2.0 (`initialize`, `notifications/initialized`, `ping`, `tools/list`, `tools/call`).
 - [x] Serve `GET /.well-known/x402` (`200 OK` JSON) with `x402Version: 2`, `mcpEndpoint`, `paidEndpoint`/`endpoints[]`, `schemes[]`, CAIP-2 `networks[]`, `payTo`, and `accepts[]`.
 - [x] Validate `server.json` files against `MCP_REGISTRY_SCHEMA` (`https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json`) with `description.length <= 100` (`mcps/*/server.json`, checked by `harness/verify-swarm.ts`).
-- [x] Enforce the 5-probe `validateEndpoint` rubric (`well_known_x402`, `mcp_get_card`, `mcp_initialize_and_tools`, `paid_402_challenge`, `retired_payee_guard`) and fail unconditionally (`score: 0`, `valid: false`) if `RETIRED_X402_PAY_TO` (`0xAB745e5F576667037696e78ba7dA28E193E4423D`) appears anywhere in discovery or `402` challenges.
+- [x] Enforce the 5-probe `validateEndpoint` rubric (`well_known_x402`, `mcp_get_card`, `mcp_initialize_and_tools`, `paid_402_challenge`, `retired_payee_guard`) and fail unconditionally (`score: 0`, `valid: false`) if any retired legacy payee appears anywhere in discovery or `402` challenges.
 - [x] Keep unprobed fleet and local seed manifests explicitly tagged `"status": "seeded_pending_live_probe"` in `registry/manifests/*.json` until live probes run (`harness/probe-fleet.ts`).
 
 ### 2. Identity & Spend Policy (`wg-identity-policy.md`)
 - [x] Disable unguarded client spend defaults (`client.setSpendControls(false)`) and enforce `SpendPolicyEngine.onPaymentRequested` in `onBeforePaymentCreation` before signing any EIP-3009 authorization or paying any Lightning invoice (`shared/x402-adapter.ts`, `shared/policy.ts`).
-- [x] Reject retired payee `0xAB745e5F576667037696e78ba7dA28E193E4423D` unconditionally in both client policy and server admission (HTTP `403`).
+- [x] Reject retired payees unconditionally in both client policy and server admission (HTTP `403`).
 - [x] Use integer `bigint` micro-USD (`1 USD = 1_000_000n`) and deterministic integer ceiling Lightning conversion (`(explicitMsat * btcMicroUsdPerSat + 999n) / 1000n`) in `evaluateRequirementMicroUsd`.
 - [x] Enforce per-call (`maxPerCallMicroUsd`) and sliding-window (`maxRollingWindowMicroUsd`, `windowMs`) caps with idempotent spend recording.
 - [x] Sign agent capability attestations (`application/vnd.x402.agent-identity+json`) and policy verdicts (`application/vnd.x402.policy-verdict+json`) using DSSE v1 (`dssePae`) backed by a persisted mode `0600` Ed25519 keystore (`shared/keystore.ts`, keyid `ed25519:76921d7540c827b1`), with immediate revocation (`PolicyIdentityStore` in `mcps/policy/identity.ts`, `mcps/policy/server.ts`).

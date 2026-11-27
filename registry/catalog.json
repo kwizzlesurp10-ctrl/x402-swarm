@@ -71,7 +71,7 @@
         {
           "name": "retired_payee_guard",
           "passed": true,
-          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+          "detail": "Verified 1 payee address(es); all passed payee integrity policy"
         }
       ],
       "schemes": [
@@ -140,7 +140,7 @@
         {
           "name": "retired_payee_guard",
           "passed": true,
-          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+          "detail": "Verified 1 payee address(es); all passed payee integrity policy"
         }
       ],
       "schemes": [
@@ -209,7 +209,7 @@
         {
           "name": "retired_payee_guard",
           "passed": true,
-          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+          "detail": "Verified 1 payee address(es); all passed payee integrity policy"
         }
       ],
       "schemes": [
@@ -389,7 +389,7 @@
         {
           "name": "retired_payee_guard",
           "passed": true,
-          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+          "detail": "Verified 1 payee address(es); all passed payee integrity policy"
         }
       ],
       "schemes": [
@@ -457,7 +457,7 @@
         {
           "name": "retired_payee_guard",
           "passed": true,
-          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+          "detail": "Verified 1 payee address(es); all passed payee integrity policy"
         }
       ],
       "schemes": [
@@ -524,7 +524,7 @@
         {
           "name": "retired_payee_guard",
           "passed": true,
-          "detail": "Verified 1 payee address(es); none match retired 0xAB745e5F576667037696e78ba7dA28E193E4423D"
+          "detail": "Verified 1 payee address(es); all passed payee integrity policy"
         }
       ],
       "schemes": [],

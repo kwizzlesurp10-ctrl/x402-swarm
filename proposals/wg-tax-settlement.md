@@ -47,7 +47,7 @@ All ledger records MUST represent monetary quantities as non-negative integer st
 ## 3. `(network, txHash)` Idempotency & Duplicate Prevention
 
 `ingestSettlement` in `mcps/settlement/ledger.ts` enforces:
-1. **Schema & Integer Validation:** Validates `SettlementReceiptSchema`, `BigInt` micro-USD / `msat` bounds, and rejects `RETIRED_X402_PAY_TO` (`0xAB745e5F576667037696e78ba7dA28E193E4423D`).
+1. **Schema & Integer Validation:** Validates `SettlementReceiptSchema`, `BigInt` micro-USD / `msat` bounds, and rejects retired payees via `isRetiredPayTo`.
 2. **DSSE Integrity:** If `receipt.dsse` is present, `verifySettlementReceipt` validates the Ed25519 DSSE signature and exact field consistency against `canonicalReceiptPayload` (or requires valid DSSE when `requireValidDsse: true`); otherwise signs with the persisted `0600` keystore (`RECEIPT_DSSE_PAYLOAD_TYPE = "application/vnd.x402.settlement-receipt+json"`).
 3. **Multi-Key Deduplication (`isDuplicateReceipt`):** Rejects duplicate insertion idempotently (`{ ingested: false, duplicate: true, receipt: existingMatch }`) whenever:
    - `(existing.network === candidate.network && identifiersEqual(existing.txHash, candidate.txHash))` (case-insensitive for `0x...` hex identifiers), OR
