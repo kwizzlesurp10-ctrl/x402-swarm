@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "status": "operational",
+  "healthScore": 100,
+  "lastAudited": "2026-11-27T22:30:00Z",
+  "fleetMetrics": {
+    "totalNodes": 8,
+    "totalEndpoints": 61,
+    "paidTools": 58,
+    "freeIngressTools": 3,
+    "averageGrossMargin": "98.0%",
+    "supportedNetworks": [
+      "eip155:8453",
+      "eip155:84532",
+      "lightning:mainnet",
+      "lightning:testnet"
+    ]
+  },
+  "trustPosture": {
+    "canonicalPayee": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+    "verifiedPayeeCompliance": true,
+    "legacyAddressMatches": 0,
+    "coinbaseCdpPreflightScore": "25/25 checks passed",
+    "facilitatorSimulationOutcome": "accepted",
+    "dsseReceiptAttestation": true,
+    "securityDeclaration": "https://x402-swarm-deploy.vercel.app/.well-known/security.txt",
+    "payeeAttestation": "https://x402-swarm-deploy.vercel.app/.well-known/payee-attestation.json"
+  },
+  "freeTrialIngress": [
+    {
+      "tool": "economy_route_triage",
+      "endpoint": "https://x402-swarm-deploy.vercel.app/mcp",
+      "costUsd": "$0.000000",
+      "description": "Zero-risk prompt complexity triage classifying Economy vs Frontier targets"
+    },
+    {
+      "tool": "gate_pricing_manifest",
+      "endpoint": "https://x402-swarm-deploy.vercel.app/mcp",
+      "costUsd": "$0.000000",
+      "description": "Live JSON pricing and capability manifest"
+    },
+    {
+      "tool": "lightning_quote_invoice",
+      "endpoint": "https://x402-swarm-deploy.vercel.app/mcp",
+      "costUsd": "$0.000000",
+      "description": "Free BOLT11 invoice and msat rate conversion tool"
+    }
+  ]
+}

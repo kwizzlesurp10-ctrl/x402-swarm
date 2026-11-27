@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "x402-swarm",
+  "title": "x402 Swarm Coordinator & Master Catalog",
+  "description": "8-agent autonomous x402 swarm coordinator, cost-aware model router, and 61-tool verified catalog.",
+  "version": "1.0.0",
+  "websiteUrl": "https://x402-swarm-deploy.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwizzlesurp10-ctrl/x402-swarm"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://x402-swarm-deploy.vercel.app/mcp"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": false
+  },
+  "trust": {
+    "canonicalPayee": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+    "securityTxt": "https://x402-swarm-deploy.vercel.app/.well-known/security.txt",
+    "payeeAttestation": "https://x402-swarm-deploy.vercel.app/.well-known/payee-attestation.json"
+  }
+}

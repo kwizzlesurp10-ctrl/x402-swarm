@@ -1,0 +1,76 @@
+{
+  "protocolVersion": "0.3.0",
+  "id": "x402-swarm",
+  "name": "x402 Swarm Coordinator & Unified Master Catalog",
+  "version": "1.0.0",
+  "description": "Unified 8-Specialist Agent Swarm & 61-Tool x402 Master Catalog on Base & Lightning. Routes cost-aware inference, verifies settlement idempotency, and serves verified municipal, financial, and SEO data. Canonical payTo: 0x0d25A44f74868eCE53B305C97139CF4B62963410.",
+  "url": "https://x402-swarm-deploy.vercel.app",
+  "preferredTransport": "HTTP",
+  "documentationUrl": "https://x402-swarm-deploy.vercel.app/#s9",
+  "provider": {
+    "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+    "url": "https://kwizzlesurp.com",
+    "contact": "kwizzlesurp10@gmail.com"
+  },
+  "payments": {
+    "rails": [
+      {
+        "id": "x402-base",
+        "protocol": "x402",
+        "version": 2,
+        "network": "eip155:8453",
+        "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "assetSymbol": "USDC",
+        "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+        "facilitator": "https://api.cdp.coinbase.com/platform/v2/x402",
+        "catalog": "https://x402-swarm-deploy.vercel.app/registry/kwizzlesurp-master-catalog.json"
+      },
+      {
+        "id": "x402-base-sepolia",
+        "protocol": "x402",
+        "version": 2,
+        "network": "eip155:84532",
+        "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+        "assetSymbol": "USDC",
+        "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+        "facilitator": "https://x402.org/facilitator",
+        "catalog": "https://x402-swarm-deploy.vercel.app/registry/kwizzlesurp-master-catalog.json"
+      },
+      {
+        "id": "x402-lightning",
+        "protocol": "lightning",
+        "network": "lightning:mainnet",
+        "asset": "SAT",
+        "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410"
+      }
+    ]
+  },
+  "trust": {
+    "securityTxt": "https://x402-swarm-deploy.vercel.app/.well-known/security.txt",
+    "payeeAttestation": "https://x402-swarm-deploy.vercel.app/.well-known/payee-attestation.json",
+    "status": "https://x402-swarm-deploy.vercel.app/.well-known/x402-status.json"
+  },
+  "skills": [
+    {
+      "id": "economy_route_triage",
+      "name": "Cost-Aware Model Routing Triage",
+      "description": "Free preview tool classifying prompt complexity into Economy vs Frontier targets.",
+      "tier": "free",
+      "price": "$0.00"
+    },
+    {
+      "id": "paid_economy_route",
+      "name": "Paid Economy Route",
+      "description": "Paid (100 µUSD = $0.000100) cost-aware model router returning Ed25519 DSSE attestation.",
+      "tier": "paid",
+      "price": "$0.000100"
+    },
+    {
+      "id": "catalog_explorer",
+      "name": "Unified x402 Master Catalog Search",
+      "description": "Query 61 verified x402 tools across 8 nodes with live pricing and schema recipes.",
+      "tier": "free",
+      "price": "$0.00"
+    }
+  ]
+}
