@@ -5,10 +5,7 @@
   "vendor": {
     "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
     "contact": "kwizzlesurp10@gmail.com",
-    "canonicalPayTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
-    "retiredPayeeBlacklist": [
-      "0xAB745e5F576667037696e78ba7dA28E193E4423D"
-    ]
+    "canonicalPayTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410"
   },
   "catalogUrl": "https://x402-swarm-deploy.vercel.app/registry/kwizzlesurp-master-catalog.json",
   "deckUrl": "https://x402-swarm-deploy.vercel.app/#s9",

@@ -11,9 +11,6 @@
     "contact": "kwizzlesurp10@gmail.com",
     "location": "Minneapolis, MN, USA",
     "canonicalPayTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
-    "retiredPayeeBlacklist": [
-      "0xAB745e5F576667037696e78ba7dA28E193E4423D"
-    ],
     "facilitatorUrls": [
       "https://x402.org/facilitator"
     ],
