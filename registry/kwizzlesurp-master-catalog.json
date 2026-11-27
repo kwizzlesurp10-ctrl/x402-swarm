@@ -1,0 +1,2525 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "catalogName": "Kwizzlesurp.com Unified x402 Master Catalog",
+  "tagline": "High-Margin Autonomous AI Micro-Services, Municipal Data & Verifiable Oracles on Base & Lightning",
+  "edition": "2026.11 Production Swarm Release",
+  "generatedAt": "2026-11-27T01:55:57.436Z",
+  "vendor": {
+    "author": "Keith S.",
+    "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+    "website": "https://kwizzlesurp.com",
+    "contact": "kwizzlesurp10@gmail.com",
+    "location": "Minneapolis, MN, USA",
+    "canonicalPayTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+    "retiredPayeeBlacklist": [
+      "0xAB745e5F576667037696e78ba7dA28E193E4423D"
+    ],
+    "facilitatorUrls": [
+      "https://x402.org/facilitator"
+    ],
+    "verifiedBadge": "https://x402.fuchss.app/endpoint?resource=https%3A%2F%2Fx402-mcp.onrender.com%2F.well-known%2Fx402"
+  },
+  "swarmOrchestration": {
+    "orchestrator": {
+      "role": "Lead Orchestrator & Revenue Synthesizer",
+      "objective": "Architect a discovery-optimized catalog engineered for maximum agentic throughput and 95%+ gross operating margin."
+    },
+    "specialists": [
+      {
+        "role": "scout",
+        "title": "Scout",
+        "mandate": "Identify high-value agentic search keywords (robots.txt, tokenized stocks, municipal housing code, DSSE attestations)."
+      },
+      {
+        "role": "architect",
+        "title": "Architect",
+        "mandate": "Enforce strict integer micro-USD pricing math (1_000_000n = $1) and multi-tier routing architecture."
+      },
+      {
+        "role": "builder",
+        "title": "Builder",
+        "mandate": "Standardize JSON-RPC 2.0 signatures, MCP tool parameters, and streaming HTTP endpoints."
+      },
+      {
+        "role": "paymaster",
+        "title": "Paymaster",
+        "mandate": "Automate dual-rail settlement across Base Mainnet/Sepolia USDC (EIP-3009) and Bitcoin Lightning BOLT11."
+      },
+      {
+        "role": "hardener",
+        "title": "Hardener",
+        "mandate": "Enforce 0600 Ed25519 DSSE verifiable signatures, spend caps, and replay protection on every receipt."
+      },
+      {
+        "role": "registrar",
+        "title": "Registrar",
+        "mandate": "Structure SEO/AEO metadata, index catalog across 24K Labs, and automate 5-check validation."
+      },
+      {
+        "role": "ledger",
+        "title": "Ledger",
+        "mandate": "Compute unit economics, track gross-to-net reconciliation, and audit 90%+ operating margins."
+      }
+    ]
+  },
+  "metrics": {
+    "totalEndpointsCount": 61,
+    "paidToolsCount": 58,
+    "freeToolsCount": 3,
+    "productionNodesCount": 8,
+    "averageProfitMarginPercent": 98,
+    "supportedNetworks": [
+      "eip155:8453",
+      "eip155:84532",
+      "lightning:mainnet",
+      "lightning:testnet"
+    ],
+    "supportedSchemes": [
+      "exact",
+      "lightning"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "tier": "Tier 0: Free Ingress",
+      "rangeMicroUsd": "0",
+      "purpose": "Discovery lead magnets, schema self-inspection, health diagnostics, and capability manifests."
+    },
+    {
+      "tier": "Tier 1: Micro-Utility",
+      "rangeMicroUsd": "100 - 1,500",
+      "rangeUsd": "$0.000100 - $0.001500",
+      "purpose": "High-volume, sub-penny utility calls (Cost-Aware Model Routing, Canonical JSON, SHA-256 DSSE attestations, Lightning echo)."
+    },
+    {
+      "tier": "Tier 2: Intelligence & Compliance",
+      "rangeMicroUsd": "5,000 - 10,000",
+      "rangeUsd": "$0.005000 - $0.010000",
+      "purpose": "Core proprietary datasets (DeFi spreads, tokenized stock NAVs, live AI-crawler audits, municipal housing violations, US city open data)."
+    },
+    {
+      "tier": "Tier 3: High-Value Consensus",
+      "rangeMicroUsd": "50,000 - 100,000",
+      "rangeUsd": "$0.050000 - $0.100000",
+      "purpose": "Multi-node consensus underwriting, agentic credit evaluation, and deep outcome planning."
+    }
+  ],
+  "categories": [
+    {
+      "id": "compute_routing",
+      "name": "Cost-Aware Compute & Model Routing",
+      "count": 5
+    },
+    {
+      "id": "market_intelligence",
+      "name": "DeFi, Spread & Tokenized Equity Intelligence",
+      "count": 13
+    },
+    {
+      "id": "seo_geo_auditing",
+      "name": "AI-Crawler, GEO/AEO & Schema Verification",
+      "count": 6
+    },
+    {
+      "id": "municipal_compliance",
+      "name": "Municipal Open Data & Parcel GIS",
+      "count": 23
+    },
+    {
+      "id": "credit_risk_consensus",
+      "name": "Agentic Credit Consensus & Threat Mail",
+      "count": 4
+    },
+    {
+      "id": "oracle_wisdom",
+      "name": "Verifiable Oracles & Dual-Rail Feeds",
+      "count": 10
+    }
+  ],
+  "tools": [
+    {
+      "id": "gate-paid-economy-route",
+      "tool": "paid_economy_route",
+      "name": "Vercel Cost-Aware Model Router",
+      "server": "402-gate",
+      "serverTitle": "402-Gate Universal x402 Server",
+      "category": "compute_routing",
+      "description": "Paid (100 µUSD = $0.000100) Cost-Aware Model Router: evaluates prompt complexity via dedicated decision models (perplexity/pplx-decider-flash-v1.3, liquid/d1.2, microsoft/decision-1.1), routes routine tasks to Economy (router/pandaforge), escalates complex reasoning to Frontier, and returns an Ed25519 DSSE attestation.",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4020/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4020/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4020/api/tools/paid_economy_route",
+      "tier": "Tier 1: Micro-Utility",
+      "networks": [
+        "eip155:84532",
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100",
+      "priceUsdFormatted": "$0.000100",
+      "estimatedUnitCostMicroUsd": "1",
+      "profitMarginPercent": 99,
+      "discoveryKeywords": [
+        "cost-aware-routing",
+        "vercel-ai-gateway",
+        "pplx-decider",
+        "router-pandaforge",
+        "dsse-attestation"
+      ],
+      "targetPersonas": [
+        "AI Agent Swarms",
+        "High-Volume Chatbots",
+        "Enterprise LLM Gateways"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "gate-economy-route-triage",
+      "tool": "economy_route_triage",
+      "name": "Cost-Aware Model Routing Triage (Free Preview)",
+      "server": "402-gate",
+      "serverTitle": "402-Gate Universal x402 Server",
+      "category": "compute_routing",
+      "description": "Free preview of Cost-Aware Model Routing: classifies prompt complexity into Economy (router/pandaforge) vs Frontier without requiring payment.",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4020/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4020/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4020/api/tools/economy_route_triage",
+      "tier": "Tier 0: Free Ingress",
+      "networks": [
+        "eip155:84532",
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "0",
+      "priceUsdFormatted": "$0.000000",
+      "estimatedUnitCostMicroUsd": "0",
+      "profitMarginPercent": 100,
+      "discoveryKeywords": [
+        "free-preview",
+        "decision-triage",
+        "lead-magnet",
+        "complexity-check"
+      ],
+      "targetPersonas": [
+        "Developers",
+        "Agent Evaluators",
+        "Testing Harnesses"
+      ],
+      "isDsseAttested": false
+    },
+    {
+      "id": "gate-pricing-manifest",
+      "tool": "gate_pricing_manifest",
+      "name": "Gateway Pricing & Capability Manifest",
+      "server": "402-gate",
+      "serverTitle": "402-Gate Universal x402 Server",
+      "category": "compute_routing",
+      "description": "Free JSON discovery manifest enumerating all paid tools, networks, assets, micro-USD pricing, and payee addresses.",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4020/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4020/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4020/api/tools/gate_pricing_manifest",
+      "tier": "Tier 0: Free Ingress",
+      "networks": [
+        "eip155:84532",
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "0",
+      "priceUsdFormatted": "$0.000000",
+      "estimatedUnitCostMicroUsd": "0",
+      "profitMarginPercent": 100,
+      "discoveryKeywords": [
+        "pricing-manifest",
+        "free-discovery",
+        "capabilities-list"
+      ],
+      "targetPersonas": [
+        "Crawlers",
+        "Aggregators",
+        "Bazaar Scanners"
+      ],
+      "isDsseAttested": false
+    },
+    {
+      "id": "gate-paid-json-transform",
+      "tool": "paid_json_transform",
+      "name": "Canonical JSON Normalizer & Digest",
+      "server": "402-gate",
+      "serverTitle": "402-Gate Universal x402 Server",
+      "category": "compute_routing",
+      "description": "Paid ($0.001 / 1000 µUSD) RFC-8785 Canonical JSON sorting, null stripping, and SHA-256 digest computation.",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4020/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4020/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4020/api/tools/paid_json_transform",
+      "tier": "Tier 1: Micro-Utility",
+      "networks": [
+        "eip155:84532",
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "1000",
+      "priceUsdFormatted": "$0.001000",
+      "estimatedUnitCostMicroUsd": "1",
+      "profitMarginPercent": 99.9,
+      "discoveryKeywords": [
+        "canonical-json",
+        "rfc8785",
+        "sha256-digest",
+        "json-normalization"
+      ],
+      "targetPersonas": [
+        "Ledger Keepers",
+        "Smart Contract Authors",
+        "Data Pipelines"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "gate-paid-hash-attest",
+      "tool": "paid_hash_attest",
+      "name": "SHA-256 Digest & Ed25519 DSSE Attestation",
+      "server": "402-gate",
+      "serverTitle": "402-Gate Universal x402 Server",
+      "category": "compute_routing",
+      "description": "Paid ($0.0015 / 1500 µUSD) SHA-256 digest and persisted Ed25519 DSSE payload attestation envelope.",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4020/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4020/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4020/api/tools/paid_hash_attest",
+      "tier": "Tier 1: Micro-Utility",
+      "networks": [
+        "eip155:84532",
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "1500",
+      "priceUsdFormatted": "$0.001500",
+      "estimatedUnitCostMicroUsd": "2",
+      "profitMarginPercent": 99.8,
+      "discoveryKeywords": [
+        "ed25519-dsse",
+        "payload-attestation",
+        "cryptographic-witness",
+        "audit-proof"
+      ],
+      "targetPersonas": [
+        "Audit Engines",
+        "Regulated Agents",
+        "Forensic Loggers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "lightning-paid-satoshi-oracle",
+      "tool": "paid_satoshi_oracle",
+      "name": "Dual-Rail Satoshi Price Witness & Feed",
+      "server": "lightning-402",
+      "serverTitle": "Lightning-402 Dual-Rail Server",
+      "category": "oracle_wisdom",
+      "description": "Dual-rail BTC/USD Satoshi quote with Ed25519 DSSE witness. Payable via Base USDC (1000 µUSD = $0.001) or Bitcoin Lightning (12,000 msat preimage).",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4021/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4021/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4021/api/v1/oracle",
+      "tier": "Tier 1: Micro-Utility",
+      "networks": [
+        "eip155:84532",
+        "lightning:testnet"
+      ],
+      "schemes": [
+        "exact",
+        "lightning"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "1000",
+      "priceUsdFormatted": "$0.001000",
+      "estimatedUnitCostMicroUsd": "5",
+      "profitMarginPercent": 99.5,
+      "discoveryKeywords": [
+        "lightning-network",
+        "bolt11-preimage",
+        "btc-quote",
+        "satoshi-oracle",
+        "dual-rail"
+      ],
+      "targetPersonas": [
+        "Lightning Agents",
+        "Bitcoiners",
+        "DeFi Swaps"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "lightning-paid-echo",
+      "tool": "paid_lightning_echo",
+      "name": "Dual-Rail Lightning Fast Echo Probe",
+      "server": "lightning-402",
+      "serverTitle": "Lightning-402 Dual-Rail Server",
+      "category": "oracle_wisdom",
+      "description": "Paid (500 µUSD / 6,000 msat) sub-second echo and preimage round-trip benchmark.",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4021/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4021/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4021/api/v1/echo",
+      "tier": "Tier 1: Micro-Utility",
+      "networks": [
+        "eip155:84532",
+        "lightning:testnet"
+      ],
+      "schemes": [
+        "exact",
+        "lightning"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "500",
+      "priceUsdFormatted": "$0.000500",
+      "estimatedUnitCostMicroUsd": "1",
+      "profitMarginPercent": 99.8,
+      "discoveryKeywords": [
+        "lightning-echo",
+        "latency-probe",
+        "bolt11-test"
+      ],
+      "targetPersonas": [
+        "Uptime Monitors",
+        "Network Probes"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "lightning-quote-invoice",
+      "tool": "lightning_quote_invoice",
+      "name": "Lightning Invoice Generator & Rate Calculator",
+      "server": "lightning-402",
+      "serverTitle": "Lightning-402 Dual-Rail Server",
+      "category": "oracle_wisdom",
+      "description": "Free tool to generate BOLT11 payment invoices and calculate msat conversion rates against live micro-USD prices.",
+      "url": "https://x402-swarm-deploy.vercel.app",
+      "mcpEndpoint": "http://127.0.0.1:4021/mcp",
+      "wellKnownUrl": "http://127.0.0.1:4021/.well-known/x402",
+      "paidEndpoint": "http://127.0.0.1:4021/api/v1/quote",
+      "tier": "Tier 0: Free Ingress",
+      "networks": [
+        "lightning:testnet"
+      ],
+      "schemes": [
+        "lightning"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "0",
+      "priceUsdFormatted": "$0.000000",
+      "estimatedUnitCostMicroUsd": "0",
+      "profitMarginPercent": 100,
+      "discoveryKeywords": [
+        "bolt11-invoice",
+        "msat-conversion",
+        "free-lightning-tool"
+      ],
+      "targetPersonas": [
+        "Lightning Wallets",
+        "Payment Gateways"
+      ],
+      "isDsseAttested": false
+    },
+    {
+      "id": "alpha-sentinel-mcp--fetch_price",
+      "tool": "fetch_price",
+      "name": "Fetch Price",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Fetch real-time cryptocurrency price from CoinGecko API.\n        \nReturns current price, 24h change, and trading volume for any supported cryptocurrency.\n\n**Use Case:** Get instant price data before executing trades or analyzing positions.\n\n**Cost:** $0.005 USD per call (cheapest tier - high frequency allowed)\n\n**Example Response:**\n{\n  \"symbol\": \"bitcoin\",\n  \"price_usd\": 67842.50,\n  \"change_24h\": 2.34,\n  \"volume_24h\": 28500000000,\n  \"timestamp\": \"2026-08-24T15:30:00Z\"\n}",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/fetch_price",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "fetch_price"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--analyze_volatility",
+      "tool": "analyze_volatility",
+      "name": "Analyze Volatility",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Analyze price volatility using statistical Z-score anomaly detection.\n        \nCalculates standard deviations from mean price to detect anomalous movements.\nConfigurable thresholds and time windows for customized analysis.\n\n**Use Case:** Identify unusual price movements before they become obvious trends.\n\n**Cost:** $0.02 USD per call\n\n**Parameters:**\n- `symbol`: Crypto symbol to analyze\n- `window_minutes`: Historical window (1-1440 min, default: 60)\n- `z_threshold`: Std dev threshold for anomalies (0.1-5.0σ, default: 2.0)\n\n**Alert Levels:** NORMAL → MODERATE → HIGH → CRITICAL",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/analyze_volatility",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "analyze_volatility"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--aggregate_sentiment",
+      "tool": "aggregate_sentiment",
+      "name": "Aggregate Sentiment",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Aggregate social media sentiment across multiple sources.\n        \nCombines Twitter/X, Reddit, and other platforms into unified sentiment scores (-1.0 to +1.0).\nDetects momentum shifts and trend changes in community opinion.\n\n**Use Case:** Gauge market psychology before major moves.\n\n**Cost:** $0.01 USD per call\n\n**Sources:** twitter, reddit, telegram, news\n\n**Output:** Overall sentiment category (bullish/neutral/bearish) with breakdown by source.",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/aggregate_sentiment",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "aggregate_sentiment"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--calculate_risk_score",
+      "tool": "calculate_risk_score",
+      "name": "Calculate Risk Score",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Calculate multi-factor risk assessment for cryptocurrencies.\n        \nCombines volatility, liquidity, market cap tier, and Bitcoin correlation into\na comprehensive risk score (0-1 scale) with actionable recommendations.\n\n**Use Case:** Assess position sizing and stop-loss levels.\n\n**Cost:** $0.03 USD per call\n\n**Risk Levels:** LOW | MEDIUM | HIGH | CRITICAL\n\n**Factors Analyzed:**\n- Volatility risk (40% weight)\n- Liquidity risk (25% weight)\n- Market cap tier (20% weight)\n- BTC correlation (15% weight)",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/calculate_risk_score",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "calculate_risk_score"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--generate_market_report",
+      "tool": "generate_market_report",
+      "name": "Generate Market Report",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Generate comprehensive market intelligence report.\n        \nSynthesizes price, volatility, sentiment, and risk data into actionable insights.\nPerfect for daily briefings or strategic planning.\n\n**Use Case:** End-of-day summary or pre-trade due diligence.\n\n**Cost:** $0.15 USD per report\n\n**Report Types:**\n- daily: 24-hour overview\n- weekly: 7-day trends  \n- monthly: 30-day strategic analysis\n\n**Includes:** Executive summary, key signals, actionable recommendations",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/generate_market_report",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "generate_market_report"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_list",
+      "tool": "tokenized_stock_list",
+      "name": "Tokenized Stock List",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "List Coinbase tokenized stocks on Base (read-only catalog).\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.01 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_list",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_list"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_lookup",
+      "tool": "tokenized_stock_lookup",
+      "name": "Tokenized Stock Lookup",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Lookup metadata for one tokenized stock (contract, ISIN, multiplier, prospectus).\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.01 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_lookup",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_lookup"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_nav_deviation",
+      "tool": "tokenized_stock_nav_deviation",
+      "name": "Tokenized Stock Nav Deviation",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Compare Chainlink NAV/reference to underlying equity spot (research spread).\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.02 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_nav_deviation",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_nav_deviation"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_corporate_action",
+      "tool": "tokenized_stock_corporate_action",
+      "name": "Tokenized Stock Corporate Action",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Fetch one announced/applied corporate action by UUID (from onchain Announcement URI).\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.02 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_corporate_action",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_corporate_action"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_research_brief",
+      "tool": "tokenized_stock_research_brief",
+      "name": "Tokenized Stock Research Brief",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Multi-symbol research brief: metadata, NAV staleness, deviation notes.\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.05 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_research_brief",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_research_brief"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_seal_receipt",
+      "tool": "tokenized_stock_seal_receipt",
+      "name": "Tokenized Stock Seal Receipt",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Seal a Proof-of-Research receipt hash on Base (ResearchReceiptRegistry).\n\nPrepares unsigned calldata by default; optional Sepolia submit via env. Not trading.\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.03 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_seal_receipt",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_seal_receipt"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_peg_gap_radar",
+      "tool": "tokenized_stock_peg_gap_radar",
+      "name": "Tokenized Stock Peg Gap Radar",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Peg-Gap Radar: onchain DEX price vs underlying reference, alerts over threshold %.\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.03 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_peg_gap_radar",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_peg_gap_radar"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "alpha-sentinel-mcp--tokenized_stock_model_portfolio",
+      "tool": "tokenized_stock_model_portfolio",
+      "name": "Tokenized Stock Model Portfolio",
+      "server": "alpha-sentinel-mcp",
+      "serverTitle": "Alpha Sentinel MCP",
+      "category": "market_intelligence",
+      "description": "Model portfolio / rebalance suggestions (weights only — no orders).\n\nRESEARCH ONLY — not investment advice. No trading, execution, custody, or swaps. Coinbase tokenized stocks are not offered to U.S. persons.\n\n**Cost:** $0.08 USD per call",
+      "url": "https://alpha-sentinel-mcp.vercel.app",
+      "mcpEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://alpha-sentinel-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://alpha-sentinel-mcp.vercel.app/mcp#tools/tokenized_stock_model_portfolio",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "5000",
+      "priceUsdFormatted": "$0.005000",
+      "estimatedUnitCostMicroUsd": "100",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "crypto-spreads",
+        "tokenized-stocks",
+        "coingecko-feed",
+        "coinbase-equity",
+        "volatility-zscore",
+        "tokenized_stock_model_portfolio"
+      ],
+      "targetPersonas": [
+        "DeFi Quants",
+        "Arbitrage Bots",
+        "Tokenized Equity Traders"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "apexseo-geo-mcp--geo_health",
+      "tool": "geo_health",
+      "name": "Geo Health",
+      "server": "apexseo-geo-mcp",
+      "serverTitle": "ApexSEO GEO & AI-Crawler MCP",
+      "category": "seo_geo_auditing",
+      "description": "Free diagnostic check returning live service uptime, supported AI crawler matrix, x402 payment configuration (Base USDC payTo and CDP facilitator readiness), and SSRF protection status. Call this or geo_pricing first before running paid live-site audits.",
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp#tools/geo_health",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "250",
+      "profitMarginPercent": 97.5,
+      "discoveryKeywords": [
+        "robots-txt-audit",
+        "llms-txt",
+        "generative-engine-optimization",
+        "json-ld-citation",
+        "ai-crawler-audit",
+        "geo_health"
+      ],
+      "targetPersonas": [
+        "SEO Agencies",
+        "AEO Optimizers",
+        "Autonomous AI Scrapers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "apexseo-geo-mcp--geo_pricing",
+      "tool": "geo_pricing",
+      "name": "Geo Pricing",
+      "server": "apexseo-geo-mcp",
+      "serverTitle": "ApexSEO GEO & AI-Crawler MCP",
+      "category": "seo_geo_auditing",
+      "description": "Free pricing manifest listing all ApexSEO GEO audit endpoints, Base Mainnet (eip155:8453) USDC prices ($0.01-$0.05), endpoint paths, and MCP Streamable HTTP connection details. Ideal sibling to geo_health before dispatching paid calls.",
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp#tools/geo_pricing",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "250",
+      "profitMarginPercent": 97.5,
+      "discoveryKeywords": [
+        "robots-txt-audit",
+        "llms-txt",
+        "generative-engine-optimization",
+        "json-ld-citation",
+        "ai-crawler-audit",
+        "geo_pricing"
+      ],
+      "targetPersonas": [
+        "SEO Agencies",
+        "AEO Optimizers",
+        "Autonomous AI Scrapers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "apexseo-geo-mcp--ai_crawler_audit",
+      "tool": "ai_crawler_audit",
+      "name": "Ai Crawler Audit",
+      "server": "apexseo-geo-mcp",
+      "serverTitle": "ApexSEO GEO & AI-Crawler MCP",
+      "category": "seo_geo_auditing",
+      "description": "Live-fetches a domain's /robots.txt, /llms.txt, /llms-full.txt, /sitemap.xml, and /.well-known/{x402,mcp,agent-card.json} files, returning a per-bot permission matrix (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Google-Extended, Bingbot, Applebot-Extended, CCBot), AI-crawler readiness score (0-100), and ICE fixes. Use geo_page_audit for HTML/TTFB signals or schema_citation_check for JSON-LD validation.",
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp#tools/ai_crawler_audit",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "250",
+      "profitMarginPercent": 97.5,
+      "discoveryKeywords": [
+        "robots-txt-audit",
+        "llms-txt",
+        "generative-engine-optimization",
+        "json-ld-citation",
+        "ai-crawler-audit",
+        "ai_crawler_audit"
+      ],
+      "targetPersonas": [
+        "SEO Agencies",
+        "AEO Optimizers",
+        "Autonomous AI Scrapers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "apexseo-geo-mcp--geo_page_audit",
+      "tool": "geo_page_audit",
+      "name": "Geo Page Audit",
+      "server": "apexseo-geo-mcp",
+      "serverTitle": "ApexSEO GEO & AI-Crawler MCP",
+      "category": "seo_geo_auditing",
+      "description": "Performs a comprehensive live technical + Generative Engine Optimization (GEO/AEO) audit of any URL: measures TTFB, redirect chain, X-Robots-Tag, meta robots, canonical/hreflang, compression & security headers, title/meta/OpenGraph, H1-H3 question-heading density, structured lists/tables, empty CSR-shell detection, image alt coverage, E-E-A-T trust signals, composite geoScore (0-100), and ApexSEO Elite ICE action plan. Pair with ai_crawler_audit for site-wide robots.txt/llms.txt or geo_competitor_compare for rival benchmarking.",
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp#tools/geo_page_audit",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "250",
+      "profitMarginPercent": 97.5,
+      "discoveryKeywords": [
+        "robots-txt-audit",
+        "llms-txt",
+        "generative-engine-optimization",
+        "json-ld-citation",
+        "ai-crawler-audit",
+        "geo_page_audit"
+      ],
+      "targetPersonas": [
+        "SEO Agencies",
+        "AEO Optimizers",
+        "Autonomous AI Scrapers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "apexseo-geo-mcp--schema_citation_check",
+      "tool": "schema_citation_check",
+      "name": "Schema Citation Check",
+      "server": "apexseo-geo-mcp",
+      "serverTitle": "ApexSEO GEO & AI-Crawler MCP",
+      "category": "seo_geo_auditing",
+      "description": "Extracts and validates all embedded application/ld+json blocks (including @graph trees) on a live page, flags syntax errors and missing AI-citation properties for Organization, WebSite, SoftwareApplication, Product, Article, FAQPage, and WebPage entities, scores schema completeness (0-100), and outputs a ready-to-paste JSON-LD @graph patch customized from detected metadata.",
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp#tools/schema_citation_check",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "250",
+      "profitMarginPercent": 97.5,
+      "discoveryKeywords": [
+        "robots-txt-audit",
+        "llms-txt",
+        "generative-engine-optimization",
+        "json-ld-citation",
+        "ai-crawler-audit",
+        "schema_citation_check"
+      ],
+      "targetPersonas": [
+        "SEO Agencies",
+        "AEO Optimizers",
+        "Autonomous AI Scrapers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "apexseo-geo-mcp--geo_competitor_compare",
+      "tool": "geo_competitor_compare",
+      "name": "Geo Competitor Compare",
+      "server": "apexseo-geo-mcp",
+      "serverTitle": "ApexSEO GEO & AI-Crawler MCP",
+      "category": "seo_geo_auditing",
+      "description": "Runs parallel live page GEO audits and AI-crawler (robots.txt / llms.txt) checks across your targetUrl and 1-3 competitorUrls, computing exact win/loss deltas across geoScore, AI-crawler readiness, TTFB speed, schema depth, question headings, and llms.txt coverage, plus a ranked ICE counter-strategy roadmap.",
+      "url": "https://apexseo-geo-mcp.vercel.app",
+      "mcpEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp",
+      "wellKnownUrl": "https://apexseo-geo-mcp.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://apexseo-geo-mcp.vercel.app/mcp#tools/geo_competitor_compare",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "250",
+      "profitMarginPercent": 97.5,
+      "discoveryKeywords": [
+        "robots-txt-audit",
+        "llms-txt",
+        "generative-engine-optimization",
+        "json-ld-citation",
+        "ai-crawler-audit",
+        "geo_competitor_compare"
+      ],
+      "targetPersonas": [
+        "SEO Agencies",
+        "AEO Optimizers",
+        "Autonomous AI Scrapers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "civicpulse-402--query_minneapolis_compliance",
+      "tool": "query_minneapolis_compliance",
+      "name": "Query Minneapolis Compliance",
+      "server": "civicpulse-402",
+      "serverTitle": "CivicPulse 402 Municipal Gateway",
+      "category": "municipal_compliance",
+      "description": "Fetches real-time City of Minneapolis housing code violations, active repair orders, and building permits for a street address. Costs 0.01 USDC (10000 units) on Base Mainnet (eip155:8453) via x402 EIP-3009.",
+      "url": "https://civicpulse-402.vercel.app",
+      "mcpEndpoint": "https://civicpulse-402.vercel.app/mcp",
+      "wellKnownUrl": "https://civicpulse-402.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://civicpulse-402.vercel.app/mcp#tools/query_minneapolis_compliance",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "150",
+      "profitMarginPercent": 98.5,
+      "discoveryKeywords": [
+        "minneapolis-housing-violations",
+        "ramsey-parcel-gis",
+        "municipal-compliance",
+        "property-audit",
+        "query_minneapolis_compliance"
+      ],
+      "targetPersonas": [
+        "Real Estate Tech",
+        "Housing Inspectors",
+        "Civic Legal Bots"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "civicpulse-402--query_ramsey_parcel_audit",
+      "tool": "query_ramsey_parcel_audit",
+      "name": "Query Ramsey Parcel Audit",
+      "server": "civicpulse-402",
+      "serverTitle": "CivicPulse 402 Municipal Gateway",
+      "category": "municipal_compliance",
+      "description": "Queries Ramsey County Open GIS for parcel attributes, registered owner, property use class, and tax assessment valuation by PIN or street address. Costs 0.01 USDC (10000 units) on Base Mainnet (eip155:8453) via x402 EIP-3009.",
+      "url": "https://civicpulse-402.vercel.app",
+      "mcpEndpoint": "https://civicpulse-402.vercel.app/mcp",
+      "wellKnownUrl": "https://civicpulse-402.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://civicpulse-402.vercel.app/mcp#tools/query_ramsey_parcel_audit",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "150",
+      "profitMarginPercent": 98.5,
+      "discoveryKeywords": [
+        "minneapolis-housing-violations",
+        "ramsey-parcel-gis",
+        "municipal-compliance",
+        "property-audit",
+        "query_ramsey_parcel_audit"
+      ],
+      "targetPersonas": [
+        "Real Estate Tech",
+        "Housing Inspectors",
+        "Civic Legal Bots"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-crediting-swarm--evaluate_x402_credit",
+      "tool": "evaluate_x402_credit",
+      "name": "Evaluate X402 Credit",
+      "server": "x402-crediting-swarm",
+      "serverTitle": "x402 Crediting Swarm",
+      "category": "credit_risk_consensus",
+      "description": "Evaluates an x402 (Payment Required) call payload across 3 consensus nodes (Alpha, Beta, Gamma) and returns a credit score (0-1000) with GO/NO-GO recommendation.",
+      "url": "https://x402-crediting-swarm.vercel.app",
+      "mcpEndpoint": "https://x402-crediting-swarm.vercel.app/mcp",
+      "wellKnownUrl": "https://x402-crediting-swarm.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402-crediting-swarm.vercel.app/mcp#tools/evaluate_x402_credit",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
+      "priceMicroUsd": "50000",
+      "priceUsdFormatted": "$0.050000",
+      "estimatedUnitCostMicroUsd": "1500",
+      "profitMarginPercent": 97,
+      "discoveryKeywords": [
+        "x402-credit-scoring",
+        "3-node-consensus",
+        "agentmail-relay",
+        "threat-alert",
+        "evaluate_x402_credit"
+      ],
+      "targetPersonas": [
+        "AI Agent Fleets",
+        "Autonomous Escrows",
+        "Underwriting Protocols"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-crediting-swarm--agentmail_send",
+      "tool": "agentmail_send",
+      "name": "Agentmail Send",
+      "server": "x402-crediting-swarm",
+      "serverTitle": "x402 Crediting Swarm",
+      "category": "credit_risk_consensus",
+      "description": "Dispatches an inter-agent message or threat alert over the AgentMail rail.",
+      "url": "https://x402-crediting-swarm.vercel.app",
+      "mcpEndpoint": "https://x402-crediting-swarm.vercel.app/mcp",
+      "wellKnownUrl": "https://x402-crediting-swarm.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402-crediting-swarm.vercel.app/mcp#tools/agentmail_send",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
+      "priceMicroUsd": "50000",
+      "priceUsdFormatted": "$0.050000",
+      "estimatedUnitCostMicroUsd": "1500",
+      "profitMarginPercent": 97,
+      "discoveryKeywords": [
+        "x402-credit-scoring",
+        "3-node-consensus",
+        "agentmail-relay",
+        "threat-alert",
+        "agentmail_send"
+      ],
+      "targetPersonas": [
+        "AI Agent Fleets",
+        "Autonomous Escrows",
+        "Underwriting Protocols"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-crediting-swarm--agentmail_inbox",
+      "tool": "agentmail_inbox",
+      "name": "Agentmail Inbox",
+      "server": "x402-crediting-swarm",
+      "serverTitle": "x402 Crediting Swarm",
+      "category": "credit_risk_consensus",
+      "description": "Reads recent AgentMail inbox messages or threat alerts.",
+      "url": "https://x402-crediting-swarm.vercel.app",
+      "mcpEndpoint": "https://x402-crediting-swarm.vercel.app/mcp",
+      "wellKnownUrl": "https://x402-crediting-swarm.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402-crediting-swarm.vercel.app/mcp#tools/agentmail_inbox",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
+      "priceMicroUsd": "50000",
+      "priceUsdFormatted": "$0.050000",
+      "estimatedUnitCostMicroUsd": "1500",
+      "profitMarginPercent": 97,
+      "discoveryKeywords": [
+        "x402-credit-scoring",
+        "3-node-consensus",
+        "agentmail-relay",
+        "threat-alert",
+        "agentmail_inbox"
+      ],
+      "targetPersonas": [
+        "AI Agent Fleets",
+        "Autonomous Escrows",
+        "Underwriting Protocols"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-crediting-swarm--swarm_health",
+      "tool": "swarm_health",
+      "name": "Swarm Health",
+      "server": "x402-crediting-swarm",
+      "serverTitle": "x402 Crediting Swarm",
+      "category": "credit_risk_consensus",
+      "description": "Checks 3-node swarm status, x402 v2 payment requirements, and configuration.",
+      "url": "https://x402-crediting-swarm.vercel.app",
+      "mcpEndpoint": "https://x402-crediting-swarm.vercel.app/mcp",
+      "wellKnownUrl": "https://x402-crediting-swarm.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402-crediting-swarm.vercel.app/mcp#tools/swarm_health",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
+      "priceMicroUsd": "50000",
+      "priceUsdFormatted": "$0.050000",
+      "estimatedUnitCostMicroUsd": "1500",
+      "profitMarginPercent": 97,
+      "discoveryKeywords": [
+        "x402-credit-scoring",
+        "3-node-consensus",
+        "agentmail-relay",
+        "threat-alert",
+        "swarm_health"
+      ],
+      "targetPersonas": [
+        "AI Agent Fleets",
+        "Autonomous Escrows",
+        "Underwriting Protocols"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.agent_card",
+      "tool": "x402.agent_card",
+      "name": "X402.Agent Card",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Return the A2A Protocol v1.0 Agent ID Card and MCP server card. Optional target_id filters to a skill id, name, or tag.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.agent_card",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.agent_card"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.discover",
+      "tool": "x402.discover",
+      "name": "X402.Discover",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Discover paid HTTP APIs in the x402 Bazaar via the facilitator catalog. Call this first to find a resource URL, then x402.probe and x402.pay_and_fetch.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.discover",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.discover"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.probe",
+      "tool": "x402.probe",
+      "name": "X402.Probe",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Probe a URL for HTTP 402 PAYMENT-REQUIRED terms using the x402 client SDK. Use before x402.pay_and_fetch to inspect price, network, and payTo without spending.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.probe",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.probe"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.pay_and_fetch",
+      "tool": "x402.pay_and_fetch",
+      "name": "X402.Pay And Fetch",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Pay USDC via x402 and fetch a protected HTTP resource in one call. Requires EVM_PRIVATE_KEY on this host; otherwise use x402.probe for a no-spend 402.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.pay_and_fetch",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.pay_and_fetch"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.build_seller",
+      "tool": "x402.build_seller",
+      "name": "X402.Build Seller",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Build seller-side x402 payment requirements for your own HTTP resource. Pass resource_url plus discovery_* fields to catalog the endpoint in Bazaar.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.build_seller",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.build_seller"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.verify",
+      "tool": "x402.verify",
+      "name": "X402.Verify",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Verify an x402 PAYMENT-SIGNATURE against PAYMENT-REQUIRED terms via the facilitator. Call after a buyer presents a signature and before releasing paid content.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.verify",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.verify"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.policy_check",
+      "tool": "x402.policy_check",
+      "name": "X402.Policy Check",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Offline buyer payment-policy check: decode a caller-supplied merchant PAYMENT-REQUIRED header and evaluate each accepts[] option against an explicit policy (networks, pay_to, assets, atomic amount, timeouts). Does not fetch merchant URLs or prove settlement on the inspected resource. Unpaid returns PaymentRequired for this server's separate analysis fee; pay via _meta['x402/payment']. Policy is consistency only, not proof.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.policy_check",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.policy_check"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--x402.networks",
+      "tool": "x402.networks",
+      "name": "X402.Networks",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "List supported settlement networks, facilitators, and x402 v2 header names. Call when choosing a preferred_network for x402.pay_and_fetch or x402.build_seller.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/x402.networks",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "x402.networks"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--commerce.pro_requirements",
+      "tool": "commerce.pro_requirements",
+      "name": "Commerce.Pro Requirements",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Build x402 payment requirements to purchase the Pro quota tier. Next: pay those terms, then commerce.activate_pro with the signature.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/commerce.pro_requirements",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "commerce.pro_requirements"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--commerce.activate_pro",
+      "tool": "commerce.activate_pro",
+      "name": "Commerce.Activate Pro",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Verify a Pro-tier x402 payment and unlock Pro quota limits for the agent. MCP-native: call unpaid for x402 requirements, retry with _meta x402/payment; or legacy PAYMENT-SIGNATURE after commerce.pro_requirements.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/commerce.activate_pro",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "commerce.activate_pro"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--commerce.credits_requirements",
+      "tool": "commerce.credits_requirements",
+      "name": "Commerce.Credits Requirements",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Build x402 payment requirements to buy a pack of per-use MCP tool credits. Next: pay those terms, then commerce.purchase_credits with the signature.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/commerce.credits_requirements",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "commerce.credits_requirements"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--commerce.purchase_credits",
+      "tool": "commerce.purchase_credits",
+      "name": "Commerce.Purchase Credits",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Verify an x402 payment and add per-use tool credits to the agent. MCP-native: unpaid call + _meta x402/payment retry; or legacy headers after commerce.credits_requirements.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/commerce.purchase_credits",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "commerce.purchase_credits"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--swarm.research",
+      "tool": "swarm.research",
+      "name": "Swarm.Research",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Run the swarm agency: compose a research product from free inputs and list it for resale. Pass allow_paid_inputs=true only when buying upstream x402 services is intended.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/swarm.research",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "swarm.research"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--swarm.settle",
+      "tool": "swarm.settle",
+      "name": "Swarm.Settle",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Verify and settle a buyer's x402 payment for a listed composite product and record revenue. Call with product_id plus PAYMENT-SIGNATURE after the buyer pays.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/swarm.settle",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "swarm.settle"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--swarm.revenue",
+      "tool": "swarm.revenue",
+      "name": "Swarm.Revenue",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Get swarm composite economics: spend, composite sales, LTV:CAC, margins, per-source scores. total_revenue_usdc is swarm listings only; storefront.revenue_usdc is the full settled ledger. Call after swarm.research or swarm.settle to inspect realized economics.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/swarm.revenue",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "swarm.revenue"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--pulse.base",
+      "tool": "pulse.base",
+      "name": "Pulse.Base",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Get live Base Network Pulse: base fee, EIP-1559 projection, utilization, USD settlement cost, verdict. Call before settling on Base when you need a settle-now vs hold recommendation.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/pulse.base",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "pulse.base"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--ops.metrics",
+      "tool": "ops.metrics",
+      "name": "Ops.Metrics",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Get host OS telemetry: CPU, memory, swap, disk, network, and an ok/warn/critical health verdict. Call to diagnose this MCP host; set include_processes=true for top memory processes.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/ops.metrics",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "ops.metrics"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--city.list",
+      "tool": "city.list",
+      "name": "City.List",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "List US cities with paid_url and free sample_url for property compliance. Start here — each paid lookup is $0.01 USDC and returns a normalized verdict (licensed / not_licensed / violations_open / …) plus source link, not raw portal JSON. Then city.sample (free shape), then city.check. Covers Minneapolis, Minnesota rental licensing (city_code mn) and other US cities.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/city.list",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "city.list"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--city.sample",
+      "tool": "city.sample",
+      "name": "City.Sample",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Free fixed-address preview of paid property-check JSON: verdict, summary, schema. Use before city.check to validate parsing without spending $0.01 USDC.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/city.sample",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "city.sample"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--city.check",
+      "tool": "city.check",
+      "name": "City.Check",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Is this US address licensed / flagged / showing open violations? One city.check ($0.01 USDC, x402 on Base) returns verdict, summary, dates, and source_url — skip querying city open-data portals yourself. Unpaid → PaymentRequired; pay via _meta['x402/payment']. Prefer city.sample first.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/city.check",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "city.check"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402-mcp-onrender--a2a.resolve_card",
+      "tool": "a2a.resolve_card",
+      "name": "A2a.Resolve Card",
+      "server": "x402-mcp-onrender",
+      "serverTitle": "US City Open-Data Compliance Network",
+      "category": "municipal_compliance",
+      "description": "Discover and inspect an external Agent-to-Agent (A2A) node by domain or URL. Fetches .well-known/agent-card.json, validates protocol compatibility, checks for a2a-x402 and AP2 payment extensions, and extracts callable skills with pricing.",
+      "url": "https://x402-mcp.onrender.com",
+      "mcpEndpoint": "https://x402-mcp.onrender.com/mcp",
+      "wellKnownUrl": "https://x402-mcp.onrender.com/.well-known/x402",
+      "paidEndpoint": "https://x402-mcp.onrender.com/mcp#tools/a2a.resolve_card",
+      "tier": "Tier 2: Intelligence & Compliance",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "10000",
+      "priceUsdFormatted": "$0.010000",
+      "estimatedUnitCostMicroUsd": "200",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "us-city-open-data",
+        "24k-labs-featured",
+        "a2a-protocol",
+        "building-permits",
+        "city-inspections",
+        "a2a.resolve_card"
+      ],
+      "targetPersonas": [
+        "City Contractors",
+        "GovTech Agents",
+        "PropTech Developers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402orcle--oracle_health",
+      "tool": "oracle_health",
+      "name": "Oracle Health",
+      "server": "x402orcle",
+      "serverTitle": "x402 Oracle",
+      "category": "oracle_wisdom",
+      "description": "Check x402 Oracle server health, configured Base payTo posture, facilitator mode (demo or live), and seller-key safety flags. Free and read-only; requires no arguments or payment header. Use this before calling paid consult tools to verify availability; use oracle_pricing to inspect USD fees.",
+      "url": "https://x402orcle.vercel.app",
+      "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+      "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402orcle.vercel.app/mcp#tools/oracle_health",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100000",
+      "priceUsdFormatted": "$0.100000",
+      "estimatedUnitCostMicroUsd": "2000",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "oracle-wisdom",
+        "402-header-diagnostics",
+        "bazaar-metadata-rewrite",
+        "complete-oracle-task",
+        "oracle_health"
+      ],
+      "targetPersonas": [
+        "x402 Protocol Architects",
+        "Autonomous Planners",
+        "CDP Bazaar Sellers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402orcle--oracle_pricing",
+      "tool": "oracle_pricing",
+      "name": "Oracle Pricing",
+      "server": "x402orcle",
+      "serverTitle": "x402 Oracle",
+      "category": "oracle_wisdom",
+      "description": "List all free and paid x402 Oracle endpoints, current clamped USDC prices on Base, max price ceiling, and connection instructions. Free and read-only; takes no parameters. Call this instead of oracle_health when selecting a paid consult tool and budgeting payment amount.",
+      "url": "https://x402orcle.vercel.app",
+      "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+      "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402orcle.vercel.app/mcp#tools/oracle_pricing",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100000",
+      "priceUsdFormatted": "$0.100000",
+      "estimatedUnitCostMicroUsd": "2000",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "oracle-wisdom",
+        "402-header-diagnostics",
+        "bazaar-metadata-rewrite",
+        "complete-oracle-task",
+        "oracle_pricing"
+      ],
+      "targetPersonas": [
+        "x402 Protocol Architects",
+        "Autonomous Planners",
+        "CDP Bazaar Sellers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402orcle--oracle_ask",
+      "tool": "oracle_ask",
+      "name": "Oracle Ask",
+      "server": "x402orcle",
+      "serverTitle": "x402 Oracle",
+      "category": "oracle_wisdom",
+      "description": "Ask a general architectural or ranking question about x402 micropayments, MCP monetization, A2A agent cards, or CDP Bazaar discovery ($0.10 USDC on Base). Unpaid calls return an HTTP 402 challenge envelope (`isError: true`); retry with `_meta['x402/payment']`. Use oracle_diagnose_402 instead to inspect a raw PAYMENT-REQUIRED header.",
+      "url": "https://x402orcle.vercel.app",
+      "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+      "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402orcle.vercel.app/mcp#tools/oracle_ask",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100000",
+      "priceUsdFormatted": "$0.100000",
+      "estimatedUnitCostMicroUsd": "2000",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "oracle-wisdom",
+        "402-header-diagnostics",
+        "bazaar-metadata-rewrite",
+        "complete-oracle-task",
+        "oracle_ask"
+      ],
+      "targetPersonas": [
+        "x402 Protocol Architects",
+        "Autonomous Planners",
+        "CDP Bazaar Sellers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402orcle--oracle_diagnose_402",
+      "tool": "oracle_diagnose_402",
+      "name": "Oracle Diagnose 402",
+      "server": "x402orcle",
+      "serverTitle": "x402 Oracle",
+      "category": "oracle_wisdom",
+      "description": "Decode and audit an HTTP 402 PAYMENT-REQUIRED header (base64 or JSON) for accepts[], Base USDC terms, extensions.bazaar schema validity, and resource.url alignment ($0.50 USDC on Base). Unpaid calls return 402 terms. Use this instead of oracle_review_mcp when debugging a single 402 payload before facilitator settlement.",
+      "url": "https://x402orcle.vercel.app",
+      "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+      "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402orcle.vercel.app/mcp#tools/oracle_diagnose_402",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100000",
+      "priceUsdFormatted": "$0.100000",
+      "estimatedUnitCostMicroUsd": "2000",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "oracle-wisdom",
+        "402-header-diagnostics",
+        "bazaar-metadata-rewrite",
+        "complete-oracle-task",
+        "oracle_diagnose_402"
+      ],
+      "targetPersonas": [
+        "x402 Protocol Architects",
+        "Autonomous Planners",
+        "CDP Bazaar Sellers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402orcle--oracle_review_mcp",
+      "tool": "oracle_review_mcp",
+      "name": "Oracle Review Mcp",
+      "server": "x402orcle",
+      "serverTitle": "x402 Oracle",
+      "category": "oracle_wisdom",
+      "description": "Audit a paid MCP server architecture for x402 payment wrapping, declareDiscoveryExtension metadata, free health tooling, Streamable HTTP compliance, and seller-key isolation ($3.00 USDC on Base). Unpaid calls return 402 terms. Use oracle_bazaar_rewrite for listing copy or oracle_diagnose_402 for single header checks.",
+      "url": "https://x402orcle.vercel.app",
+      "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+      "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402orcle.vercel.app/mcp#tools/oracle_review_mcp",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100000",
+      "priceUsdFormatted": "$0.100000",
+      "estimatedUnitCostMicroUsd": "2000",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "oracle-wisdom",
+        "402-header-diagnostics",
+        "bazaar-metadata-rewrite",
+        "complete-oracle-task",
+        "oracle_review_mcp"
+      ],
+      "targetPersonas": [
+        "x402 Protocol Architects",
+        "Autonomous Planners",
+        "CDP Bazaar Sellers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402orcle--oracle_bazaar_rewrite",
+      "tool": "oracle_bazaar_rewrite",
+      "name": "Oracle Bazaar Rewrite",
+      "server": "x402orcle",
+      "serverTitle": "x402 Oracle",
+      "category": "oracle_wisdom",
+      "description": "Generate SEO-optimized CDP Bazaar metadata (serviceName <=32 chars, description <=500 chars, <=5 tags) front-loaded with buyer search phrases and first-index freeze warnings ($1.50 USDC on Base). Unpaid calls return 402 terms. Use this before settling a new SKU; for broader launch diffs use complete_oracle_task.",
+      "url": "https://x402orcle.vercel.app",
+      "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+      "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402orcle.vercel.app/mcp#tools/oracle_bazaar_rewrite",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100000",
+      "priceUsdFormatted": "$0.100000",
+      "estimatedUnitCostMicroUsd": "2000",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "oracle-wisdom",
+        "402-header-diagnostics",
+        "bazaar-metadata-rewrite",
+        "complete-oracle-task",
+        "oracle_bazaar_rewrite"
+      ],
+      "targetPersonas": [
+        "x402 Protocol Architects",
+        "Autonomous Planners",
+        "CDP Bazaar Sellers"
+      ],
+      "isDsseAttested": true
+    },
+    {
+      "id": "x402orcle--complete_oracle_task",
+      "tool": "complete_oracle_task",
+      "name": "Complete Oracle Task",
+      "server": "x402orcle",
+      "serverTitle": "x402 Oracle",
+      "category": "oracle_wisdom",
+      "description": "Execute a high-depth outcome planning task delivering typed diffs, security constraints, operator handoff checklists, and ship verification steps for an x402 production launch goal ($10.00 USDC on Base). Unpaid calls return 402 terms. Use for end-to-end delivery plans; use oracle_ask ($0.10) for shorter Q&A.",
+      "url": "https://x402orcle.vercel.app",
+      "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+      "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
+      "paidEndpoint": "https://x402orcle.vercel.app/mcp#tools/complete_oracle_task",
+      "tier": "Tier 3: High-Value Consensus",
+      "networks": [
+        "eip155:8453",
+        "eip155:84532"
+      ],
+      "schemes": [
+        "exact"
+      ],
+      "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+      "priceMicroUsd": "100000",
+      "priceUsdFormatted": "$0.100000",
+      "estimatedUnitCostMicroUsd": "2000",
+      "profitMarginPercent": 98,
+      "discoveryKeywords": [
+        "oracle-wisdom",
+        "402-header-diagnostics",
+        "bazaar-metadata-rewrite",
+        "complete-oracle-task",
+        "complete_oracle_task"
+      ],
+      "targetPersonas": [
+        "x402 Protocol Architects",
+        "Autonomous Planners",
+        "CDP Bazaar Sellers"
+      ],
+      "isDsseAttested": true
+    }
+  ]
+}

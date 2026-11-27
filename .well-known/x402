@@ -1,0 +1,44 @@
+{
+  "x402Version": "2.0",
+  "name": "Kwizzlesurp.com Unified x402 Master Catalog",
+  "tagline": "High-Margin Autonomous AI Micro-Services, Municipal Data & Verifiable Oracles on Base & Lightning",
+  "vendor": {
+    "organization": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
+    "contact": "kwizzlesurp10@gmail.com",
+    "canonicalPayTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
+    "retiredPayeeBlacklist": [
+      "0xAB745e5F576667037696e78ba7dA28E193E4423D"
+    ]
+  },
+  "catalogUrl": "https://x402-swarm-deploy.vercel.app/registry/kwizzlesurp-master-catalog.json",
+  "deckUrl": "https://x402-swarm-deploy.vercel.app/#s9",
+  "metrics": {
+    "totalEndpoints": 61,
+    "paidTools": 58,
+    "freeTools": 3,
+    "averageMargin": "98.0%",
+    "pricingRangeUsd": "$0.000100 - $0.100000"
+  },
+  "networks": [
+    "eip155:8453",
+    "eip155:84532",
+    "lightning:mainnet",
+    "lightning:testnet"
+  ],
+  "schemes": [
+    "exact",
+    "lightning"
+  ],
+  "facilitators": [
+    "https://x402.org/facilitator"
+  ],
+  "nodes": [
+    "https://alpha-sentinel-mcp.vercel.app",
+    "https://apexseo-geo-mcp.vercel.app",
+    "https://civicpulse-402.vercel.app",
+    "https://x402-crediting-swarm.vercel.app",
+    "https://x402-mcp.onrender.com",
+    "https://x402orcle.vercel.app",
+    "https://x402-swarm-deploy.vercel.app"
+  ]
+}
