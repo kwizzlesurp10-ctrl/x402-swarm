@@ -9,6 +9,10 @@
   },
   "catalogUrl": "https://x402-swarm-deploy.vercel.app/registry/kwizzlesurp-master-catalog.json",
   "deckUrl": "https://x402-swarm-deploy.vercel.app/#s9",
+  "trustAnchors": {
+    "securityTxt": "https://x402-swarm-deploy.vercel.app/.well-known/security.txt",
+    "payeeAttestation": "https://x402-swarm-deploy.vercel.app/.well-known/payee-attestation.json"
+  },
   "metrics": {
     "totalEndpoints": 61,
     "paidTools": 58,
