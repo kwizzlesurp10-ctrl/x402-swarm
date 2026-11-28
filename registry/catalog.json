@@ -38,7 +38,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "5000",
     "status": "verified",
-    "updatedAt": "2026-11-26T00:57:37.070Z",
+    "updatedAt": "2026-11-28T00:41:25.905Z",
     "validation": {
       "url": "https://alpha-sentinel-mcp.vercel.app",
       "valid": true,
@@ -84,8 +84,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "5000",
-      "latencyMs": 1725,
-      "checkedAt": "2026-11-26T00:57:37.070Z"
+      "latencyMs": 1222,
+      "checkedAt": "2026-11-28T00:41:25.905Z"
     }
   },
   {
@@ -107,7 +107,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-26T00:57:38.799Z",
+    "updatedAt": "2026-11-28T00:41:26.994Z",
     "validation": {
       "url": "https://apexseo-geo-mcp.vercel.app",
       "valid": true,
@@ -153,8 +153,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 1729,
-      "checkedAt": "2026-11-26T00:57:38.799Z"
+      "latencyMs": 1089,
+      "checkedAt": "2026-11-28T00:41:26.994Z"
     }
   },
   {
@@ -176,7 +176,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-26T00:57:41.555Z",
+    "updatedAt": "2026-11-28T00:41:28.144Z",
     "validation": {
       "url": "https://civicpulse-402.vercel.app",
       "valid": true,
@@ -222,8 +222,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 2755,
-      "checkedAt": "2026-11-26T00:57:41.555Z"
+      "latencyMs": 1150,
+      "checkedAt": "2026-11-28T00:41:28.144Z"
     }
   },
   {
@@ -356,7 +356,7 @@
     "payTo": "0x0d25a44f74868ece53b305c97139cf4b62963410",
     "priceMicroUsd": "50000",
     "status": "verified",
-    "updatedAt": "2026-11-26T00:57:43.155Z",
+    "updatedAt": "2026-11-28T00:41:29.449Z",
     "validation": {
       "url": "https://x402-crediting-swarm.vercel.app",
       "valid": true,
@@ -402,8 +402,8 @@
         "0x0d25a44f74868ece53b305c97139cf4b62963410"
       ],
       "priceMicroUsd": "50000",
-      "latencyMs": 1600,
-      "checkedAt": "2026-11-26T00:57:43.155Z"
+      "latencyMs": 1305,
+      "checkedAt": "2026-11-28T00:41:29.449Z"
     }
   },
   {
@@ -424,7 +424,7 @@
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "10000",
     "status": "verified",
-    "updatedAt": "2026-11-26T00:57:44.029Z",
+    "updatedAt": "2026-11-28T00:41:30.334Z",
     "validation": {
       "url": "https://x402-mcp.onrender.com",
       "valid": true,
@@ -470,8 +470,8 @@
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
       "priceMicroUsd": "10000",
-      "latencyMs": 874,
-      "checkedAt": "2026-11-26T00:57:44.029Z"
+      "latencyMs": 885,
+      "checkedAt": "2026-11-28T00:41:30.334Z"
     }
   },
   {
@@ -481,6 +481,7 @@
     "description": "Seeded kwizzlesurp.com fleet manifest for x402orcle.vercel.app pending live endpoint probe.",
     "url": "https://x402orcle.vercel.app",
     "mcpEndpoint": "https://x402orcle.vercel.app/mcp",
+    "paidEndpoint": "https://x402orcle.vercel.app/api/consult/oracle_ask",
     "wellKnownUrl": "https://x402orcle.vercel.app/.well-known/x402",
     "vendor": "kwizzlesurp.com · Sevtech · Dragon&PandaDuo",
     "networks": [
@@ -491,12 +492,12 @@
     ],
     "payTo": "0x0d25A44f74868eCE53B305C97139CF4B62963410",
     "priceMicroUsd": "100000",
-    "status": "failed",
-    "updatedAt": "2026-11-26T00:57:45.152Z",
+    "status": "verified",
+    "updatedAt": "2026-11-28T00:41:31.390Z",
     "validation": {
       "url": "https://x402orcle.vercel.app",
-      "valid": false,
-      "score": 80,
+      "valid": true,
+      "score": 100,
       "checks": [
         {
           "name": "well_known_x402",
@@ -518,8 +519,9 @@
         },
         {
           "name": "paid_402_challenge",
-          "passed": false,
-          "detail": "Paid endpoint probe failed: fetch failed"
+          "passed": true,
+          "status": 402,
+          "detail": "HTTP 402 challenge validated (1 accept option(s))"
         },
         {
           "name": "retired_payee_guard",
@@ -527,16 +529,18 @@
           "detail": "Verified 1 payee address(es); all passed payee integrity policy"
         }
       ],
-      "schemes": [],
+      "schemes": [
+        "exact"
+      ],
       "networks": [
         "eip155:8453"
       ],
       "payTo": [
         "0x0d25A44f74868eCE53B305C97139CF4B62963410"
       ],
-      "priceMicroUsd": null,
-      "latencyMs": 1123,
-      "checkedAt": "2026-11-26T00:57:45.152Z"
+      "priceMicroUsd": "100000",
+      "latencyMs": 1056,
+      "checkedAt": "2026-11-28T00:41:31.390Z"
     }
   }
 ]
